@@ -1,3 +1,4 @@
+
 'use server';
 
 /**
@@ -33,7 +34,7 @@ const prompt = ai.definePrompt({
   name: 'web3AdvisorPrompt',
   input: {schema: Web3AdvisorInputSchema},
   output: {schema: Web3AdvisorOutputSchema},
-  prompt: `You are a Web3 advisor. Provide AI-driven contextual recommendations based on the following user query: {{{query}}}.',
+  prompt: `You are a Web3 advisor. Provide AI-driven contextual recommendations based on the following user query: {{{query}}}.`,
   config: {
     safetySettings: [
       {
@@ -52,15 +53,15 @@ const prompt = ai.definePrompt({
         category: 'HARM_CATEGORY_SEXUALLY_EXPLICIT',
         threshold: 'BLOCK_LOW_AND_ABOVE',
       },
-    ],
-  },
+    ]
+  } // Removed trailing comma here
 });
 
 const web3AdvisorFlow = ai.defineFlow(
   {
     name: 'web3AdvisorFlow',
     inputSchema: Web3AdvisorInputSchema,
-    outputSchema: Web3AdvisorOutputSchema,
+    outputSchema: Web3AdvisorOutputSchema // Removed trailing comma here
   },
   async input => {
     const {output} = await prompt(input);
