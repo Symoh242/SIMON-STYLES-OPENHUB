@@ -38,13 +38,13 @@ export function HeroSection() {
           </div>
           <div className={`relative transition-all duration-1000 ease-out delay-200 ${mounted ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-10'}`}>
             <Image
-              src="https://picsum.photos/seed/code_creativity/600/500"
-              alt="Innovative Digital Solutions for Programming"
+              src="https://picsum.photos/seed/abstract_coding_background_tech/600/500"
+              alt="Abstract representation of coding and technology"
               width={600}
               height={500}
               className="rounded-xl shadow-2xl object-cover"
               priority
-              data-ai-hint="code creativity"
+              data-ai-hint="abstract coding"
             />
              <div className="absolute -top-8 -right-8 w-32 h-32 bg-accent/20 rounded-full filter blur-2xl animate-pulse opacity-50  md:block hidden"></div>
              <div className="absolute -bottom-8 -left-8 w-40 h-40 bg-primary/10 rounded-full filter blur-3xl animate-pulse opacity-50 delay-500 md:block hidden"></div>

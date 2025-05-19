@@ -29,11 +29,11 @@ export default function AboutPage() {
             </div>
             <div className="relative aspect-video rounded-xl overflow-hidden shadow-lg">
                  <Image
-                    src="https://picsum.photos/seed/code_community/600/400"
-                    alt="Open Source Collaboration"
+                    src="https://picsum.photos/seed/developers_collaborating_code/600/400"
+                    alt="Open Source Collaboration - Developers working together"
                     layout="fill"
                     objectFit="cover"
-                    data-ai-hint="code community"
+                    data-ai-hint="developers collaborating"
                   />
             </div>
           </div>
