@@ -47,8 +47,8 @@ export const servicesData: Service[] = [
     description: 'Crafting modern, responsive websites tailored to your needs.',
     longDescription: 'Our web development services focus on creating high-performance, feature-rich, and visually stunning websites. We utilize the latest technologies and frameworks to ensure your online presence is robust, scalable, and user-friendly. From e-commerce platforms to corporate websites, we deliver solutions that drive engagement and achieve business goals.',
     icon: Globe,
-    imageUrl: 'https://picsum.photos/seed/code_editor_screen/600/400',
-    dataAiHint: 'code editor'
+    imageUrl: 'https://images.pexels.com/photos/12345/coding-setup.jpg', // Example Pexels URL
+    dataAiHint: 'web development'
   },
   {
     id: 'system-dev',
@@ -56,8 +56,8 @@ export const servicesData: Service[] = [
     description: 'Building robust and scalable software systems for various platforms.',
     longDescription: 'We specialize in developing custom software systems, including enterprise applications, CRM solutions, and backend infrastructures. Our approach emphasizes reliability, security, and scalability, ensuring your systems can grow with your business. We work closely with you to understand your requirements and deliver tailored solutions that streamline operations and enhance productivity.',
     icon: Database,
-    imageUrl: 'https://picsum.photos/seed/server_room_data/600/400',
-    dataAiHint: 'server room'
+    imageUrl: 'https://picsum.photos/seed/system_architecture_diagram/600/400',
+    dataAiHint: 'system architecture'
   },
   {
     id: 'blockchain-dev',
@@ -65,8 +65,8 @@ export const servicesData: Service[] = [
     description: 'Innovative blockchain solutions for decentralized applications.',
     longDescription: 'Explore the potential of decentralized technology with our blockchain development services. We design and build custom blockchain solutions, smart contracts, and DApps across various platforms. Whether you are looking to integrate blockchain into your existing systems or build a new decentralized application, our experts can guide you through the process.',
     icon: Share2,
-    imageUrl: 'https://picsum.photos/seed/blockchain_abstract_network/600/400',
-    dataAiHint: 'blockchain network'
+    imageUrl: 'https://picsum.photos/seed/blockchain_network_nodes/600/400',
+    dataAiHint: 'blockchain nodes'
   },
   {
     id: 'web3-services',
@@ -74,8 +74,8 @@ export const servicesData: Service[] = [
     description: 'Comprehensive services for the next generation of the internet.',
     longDescription: 'Navigate the evolving Web3 landscape with our expert services. We offer consultation, development, and integration for NFT marketplaces, DeFi platforms, DAOs, and more. Our team stays at the forefront of Web3 technologies to help you leverage decentralization, tokenization, and community-driven ecosystems for innovative business models.',
     icon: Code,
-    imageUrl: 'https://picsum.photos/seed/web3_futuristic_interface/600/400',
-    dataAiHint: 'web3 interface'
+    imageUrl: 'https://picsum.photos/seed/web3_metaverse_abstract/600/400',
+    dataAiHint: 'web3 metaverse'
   },
 ];
 
@@ -86,8 +86,8 @@ export const laptopsData: Laptop[] = [
     model: 'XPS 13',
     specs: ['Intel Core i7', '16GB RAM', '512GB SSD', '13.3" FHD Display'],
     dailyCharge: 1500,
-    imageUrl: 'https://picsum.photos/seed/laptop_on_desk_workspace/400/300',
-    dataAiHint: 'laptop workspace'
+    imageUrl: 'https://picsum.photos/seed/modern_laptop_desk/400/300',
+    dataAiHint: 'modern laptop'
   },
   {
     id: 'laptop-2',
@@ -95,8 +95,8 @@ export const laptopsData: Laptop[] = [
     model: 'MacBook Pro 14"',
     specs: ['M3 Pro Chip', '18GB RAM', '512GB SSD', '14" Liquid Retina XDR'],
     dailyCharge: 2500,
-    imageUrl: 'https://picsum.photos/seed/developer_coding_macbook/400/300',
-    dataAiHint: 'coding macbook'
+    imageUrl: 'https://picsum.photos/seed/apple_macbook_pro_screen/400/300',
+    dataAiHint: 'macbook pro'
   },
   {
     id: 'laptop-3',
@@ -104,8 +104,8 @@ export const laptopsData: Laptop[] = [
     model: 'ThinkPad X1 Carbon',
     specs: ['Intel Core i5', '16GB RAM', '1TB SSD', '14" WQHD Display'],
     dailyCharge: 1800,
-    imageUrl: 'https://picsum.photos/seed/business_laptop_meeting/400/300',
-    dataAiHint: 'business laptop'
+    imageUrl: 'https://picsum.photos/seed/lenovo_thinkpad_keyboard/400/300',
+    dataAiHint: 'thinkpad keyboard'
   },
   {
     id: 'laptop-4',
@@ -113,8 +113,8 @@ export const laptopsData: Laptop[] = [
     model: 'Spectre x360',
     specs: ['Intel Core i7', '16GB RAM', '512GB SSD', '13.5" OLED Touch'],
     dailyCharge: 2000,
-    imageUrl: 'https://picsum.photos/seed/convertible_laptop_design/400/300',
-    dataAiHint: 'convertible laptop'
+    imageUrl: 'https://picsum.photos/seed/hp_spectre_convertible/400/300',
+    dataAiHint: 'hp spectre'
   },
 ];
 
@@ -124,23 +124,23 @@ export const directorsData: Director[] = [
     name: 'Alice Wonderland',
     title: 'CEO & Lead Strategist',
     bio: 'Alice drives the vision of OpenSource Hub, leveraging her extensive experience in tech leadership and open-source advocacy to foster innovation and growth.',
-    imageUrl: 'https://picsum.photos/seed/tech_leader_presentation/300/300',
-    dataAiHint: 'tech leader'
+    imageUrl: 'https://picsum.photos/seed/female_ceo_portrait_modern/300/300',
+    dataAiHint: 'female ceo'
   },
   {
     id: 'director-2',
     name: 'Bob The Builder',
     title: 'CTO & Head of Engineering',
     bio: 'Bob leads our talented engineering teams, ensuring technical excellence and the adoption of cutting-edge technologies in all our projects.',
-    imageUrl: 'https://picsum.photos/seed/engineer_coding_screen/300/300',
-    dataAiHint: 'engineer coding'
+    imageUrl: 'https://picsum.photos/seed/male_cto_coding_background/300/300',
+    dataAiHint: 'male cto'
   },
   {
     id: 'director-3',
     name: 'Carol Danvers',
     title: 'Head of Blockchain & Web3',
     bio: 'Carol is a pioneer in the blockchain space, guiding our Web3 initiatives and helping clients navigate the complexities of decentralized technologies.',
-    imageUrl: 'https://picsum.photos/seed/blockchain_expert_explaining/300/300',
+    imageUrl: 'https://picsum.photos/seed/female_blockchain_expert_tech/300/300',
     dataAiHint: 'blockchain expert'
   },
   {
@@ -148,7 +148,7 @@ export const directorsData: Director[] = [
     name: 'Dave Lister',
     title: 'Director of Operations',
     bio: 'Dave ensures smooth operations and project delivery, focusing on client satisfaction and efficient processes across the company.',
-    imageUrl: 'https://picsum.photos/seed/operations_manager_desk/300/300',
+    imageUrl: 'https://picsum.photos/seed/male_operations_manager_office/300/300',
     dataAiHint: 'operations manager'
   },
 ];
@@ -159,32 +159,31 @@ export const testimonialsData: Testimonial[] = [
     projectName: 'EcoFriendly Marketplace',
     description: 'OpenSource Hub developed a stunning e-commerce platform that boosted our sales by 40%. Their team was professional and highly skilled.',
     websiteUrl: '#',
-    imageUrl: 'https://picsum.photos/seed/online_store_analytics_graph/500/350',
-    dataAiHint: 'ecommerce graph'
+    imageUrl: 'https://picsum.photos/seed/ecommerce_growth_chart_interface/500/350',
+    dataAiHint: 'ecommerce interface'
   },
   {
     id: 'testimonial-2',
     projectName: 'Decentralized Finance App',
     description: 'Their expertise in blockchain technology was invaluable in creating our DeFi application. Highly recommended for Web3 projects.',
     websiteUrl: '#',
-    imageUrl: 'https://picsum.photos/seed/crypto_dashboard_chart/500/350',
-    dataAiHint: 'crypto chart'
+    imageUrl: 'https://picsum.photos/seed/defi_crypto_dashboard_dark/500/350',
+    dataAiHint: 'defi dashboard'
   },
   {
     id: 'testimonial-3',
     projectName: 'Community Portal System',
     description: 'The custom system they built streamlined our community management. Excellent communication and on-time delivery.',
     websiteUrl: '#',
-    imageUrl: 'https://picsum.photos/seed/team_video_conference_laptops/500/350',
-    dataAiHint: 'team conference'
+    imageUrl: 'https://picsum.photos/seed/online_community_collaboration_platform/500/350',
+    dataAiHint: 'community platform'
   },
   {
     id: 'testimonial-4',
     projectName: 'AI Powered Analytics Tool',
     description: 'We are extremely pleased with the analytics tool developed by OpenSource Hub. It has provided us with critical insights for our business strategy.',
     websiteUrl: '#',
-    imageUrl: 'https://picsum.photos/seed/data_visualization_dashboard_screen/500/350',
-    dataAiHint: 'data dashboard'
+    imageUrl: 'https://picsum.photos/seed/ai_analytics_dashboard_graphs/500/350',
+    dataAiHint: 'ai dashboard'
   },
 ];
-
