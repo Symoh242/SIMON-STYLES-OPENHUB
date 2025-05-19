@@ -8,7 +8,7 @@ export function LogoIcon(props: SVGProps<SVGSVGElement>) {
       viewBox="0 0 50 50"
       width="50"
       height="50"
-      aria-label="Hub Logo"
+      aria-label="Simon Styles Hub Logo"
       {...props}
     >
       <rect width="50" height="50" rx="8" fill="hsl(var(--primary))" />

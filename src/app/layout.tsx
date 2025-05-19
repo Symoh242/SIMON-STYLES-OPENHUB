@@ -7,8 +7,8 @@ import { Footer } from '@/components/layout/footer';
 import { Toaster } from "@/components/ui/toaster";
 
 export const metadata: Metadata = {
-  title: 'Hub | Innovative Development Solutions',
-  description: 'Hub offers top-tier web development, system development, blockchain, and Web3 services. Lease laptops and get AI-powered Web3 advice.',
+  title: 'Simon Styles Hub | Innovative Development Solutions',
+  description: 'Simon Styles Hub offers top-tier web development, system development, blockchain, and Web3 services. Lease laptops and get AI-powered Web3 advice.',
 };
 
 export default function RootLayout({

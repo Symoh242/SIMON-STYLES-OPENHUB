@@ -34,7 +34,7 @@ export function Navbar() {
         <div className="container mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
           <Link href="/" className="flex items-center space-x-2">
             <LogoIcon className="h-8 w-8" />
-            <span className="font-bold text-xl text-primary">Hub</span>
+            <span className="font-bold text-xl text-primary">Simon Styles Hub</span>
           </Link>
           {/* Placeholder for nav links to maintain layout consistency before hydration */}
           <div className="hidden md:flex items-center space-x-1">
@@ -78,7 +78,7 @@ export function Navbar() {
       <div className="container mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
         <Link href="/" className="flex items-center space-x-2" onClick={() => setIsSheetOpen(false)}>
           <LogoIcon className="h-8 w-8" />
-           <span className="font-bold text-xl text-primary">Hub</span>
+           <span className="font-bold text-xl text-primary">Simon Styles Hub</span>
         </Link>
         
         <nav className="hidden md:flex items-center space-x-1">
@@ -97,7 +97,7 @@ export function Navbar() {
               <div className="flex flex-col space-y-4">
                 <Link href="/" className="mb-6 self-start flex items-center space-x-2" onClick={() => setIsSheetOpen(false)}>
                   <LogoIcon className="h-10 w-10" />
-                  <span className="font-bold text-2xl text-primary">Hub</span>
+                  <span className="font-bold text-2xl text-primary">Simon Styles Hub</span>
                 </Link>
                 <NavLinksContent isMobile={true} />
               </div>
