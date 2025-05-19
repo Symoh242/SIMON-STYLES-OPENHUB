@@ -9,7 +9,7 @@ export default function AboutPage() {
   return (
     <>
       <PageHeader
-        title="About Simon Styles Open Hub"
+        title="About Hub"
         description="Learn about our mission, our commitment to open source, and the talented team behind our success."
       />
 
@@ -21,7 +21,7 @@ export default function AboutPage() {
                 Our Open-Source Philosophy
               </h2>
               <p className="mt-4 text-lg text-muted-foreground">
-                At Simon Styles Open Hub, we are passionate advocates for the power of open-source technology. We believe that collaboration, transparency, and community-driven development are key to building innovative and impactful solutions.
+                At Hub, we are passionate advocates for the power of open-source technology. We believe that collaboration, transparency, and community-driven development are key to building innovative and impactful solutions.
               </p>
               <p className="mt-4 text-lg text-muted-foreground">
                 Our commitment extends beyond just using open-source tools; we actively contribute to the community, share our knowledge, and foster an environment where open principles thrive. This approach allows us to deliver robust, flexible, and cost-effective services to our clients.
@@ -29,7 +29,7 @@ export default function AboutPage() {
             </div>
             <div className="relative aspect-video rounded-xl overflow-hidden shadow-lg">
                  <Image
-                    src="https://picsum.photos/seed/programming_code_collaboration/600/400"
+                    src="https://picsum.photos/seed/programming_collaboration/600/400"
                     alt="Open Source Collaboration - Developers working together"
                     layout="fill"
                     objectFit="cover"
@@ -45,7 +45,7 @@ export default function AboutPage() {
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold tracking-tight text-primary sm:text-4xl">Meet Our Leadership</h2>
             <p className="mt-4 text-lg text-muted-foreground">
-              The driving force behind Simon Styles Open Hub's innovation and success.
+              The driving force behind Hub's innovation and success.
             </p>
           </div>
           <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">

@@ -17,8 +17,7 @@ export function HeroSection() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div className={`transition-all duration-1000 ease-out ${mounted ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-10'}`}>
             <h1 className="text-4xl font-extrabold tracking-tight text-foreground sm:text-5xl md:text-6xl">
-              Build the Future with <span className="text-primary">Simon Styles</span>
-              <span className="text-accent"> Open Hub</span>
+              Build the Future with <span className="text-primary">Hub</span>
             </h1>
             <p className="mt-6 text-lg leading-8 text-muted-foreground sm:max-w-md lg:max-w-none">
               Empowering innovation through collaborative open-source development. We offer cutting-edge solutions in web, systems, blockchain, and Web3.
@@ -39,7 +38,7 @@ export function HeroSection() {
           <div className={`relative transition-all duration-1000 ease-out delay-200 ${mounted ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-10'}`}>
             <Image
               src="https://picsum.photos/seed/black_developer_coding/600/400"
-              alt="Black developer working on website development online"
+              alt="Developer working on website development online"
               width={600}
               height={400}
               className="rounded-xl shadow-2xl object-cover mx-auto"

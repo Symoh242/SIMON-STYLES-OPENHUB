@@ -5,24 +5,24 @@ export function LogoIcon(props: SVGProps<SVGSVGElement>) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 200 50" // Adjusted viewBox for potentially longer text
-      width="200" // Adjusted width for potentially longer text
-      height="37.5"
-      aria-label="Simon Styles Open Hub Logo"
+      viewBox="0 0 50 50"
+      width="50"
+      height="50"
+      aria-label="Hub Logo"
       {...props}
     >
-      <rect width="200" height="50" fill="transparent" />
+      <rect width="50" height="50" rx="8" fill="hsl(var(--primary))" />
       <text
-        x="10"
-        y="35"
+        x="50%"
+        y="51%" // Adjusted for better visual centering
+        dominantBaseline="middle"
+        textAnchor="middle"
         fontFamily="var(--font-geist-sans), Arial, sans-serif"
-        fontSize="24" // Slightly reduced font size if needed for longer name
+        fontSize="28"
         fontWeight="bold"
-        fill="currentColor"
-        className="text-primary dark:text-primary"
+        fill="hsl(var(--primary-foreground))"
       >
-        Simon Styles
-        <tspan fill="currentColor" className="text-accent dark:text-accent"> Open Hub</tspan>
+        H
       </text>
     </svg>
   );
