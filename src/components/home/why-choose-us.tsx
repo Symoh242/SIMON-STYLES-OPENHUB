@@ -37,7 +37,7 @@ export function WhyChooseUs() {
       <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div className={`transition-all duration-1000 ease-out ${mounted ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-10'}`}>
-            <h2 className="text-3xl font-bold tracking-tight text-primary sm:text-4xl">Why Partner with OpenSource Hub?</h2>
+            <h2 className="text-3xl font-bold tracking-tight text-primary sm:text-4xl">Why Partner with Simon Styles Open Hub?</h2>
             <p className="mt-4 text-lg text-muted-foreground">
               We are dedicated to providing exceptional development services that drive growth and innovation. Our commitment to open-source principles, combined with our technical expertise, makes us the ideal partner for your next project.
             </p>
@@ -57,7 +57,7 @@ export function WhyChooseUs() {
           </div>
           <div className={`relative transition-all duration-1000 ease-out delay-200 ${mounted ? 'opacity-100 scale-100' : 'opacity-0 scale-90'}`}>
             <Image
-              src="https://picsum.photos/seed/team_coding_laptops_collaboration/500/450"
+              src="https://picsum.photos/seed/team_coding_laptops/500/450"
               alt="Developer team collaborating and coding on laptops"
               width={500}
               height={450}
@@ -70,4 +70,3 @@ export function WhyChooseUs() {
     </section>
   );
 }
-

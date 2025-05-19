@@ -17,8 +17,8 @@ export function HeroSection() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div className={`transition-all duration-1000 ease-out ${mounted ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-10'}`}>
             <h1 className="text-4xl font-extrabold tracking-tight text-foreground sm:text-5xl md:text-6xl">
-              Build the Future with <span className="text-primary">OpenSource</span>
-              <span className="text-accent"> Hub</span>
+              Build the Future with <span className="text-primary">Simon Styles</span>
+              <span className="text-accent"> Open Hub</span>
             </h1>
             <p className="mt-6 text-lg leading-8 text-muted-foreground sm:max-w-md lg:max-w-none">
               Empowering innovation through collaborative open-source development. We offer cutting-edge solutions in web, systems, blockchain, and Web3.

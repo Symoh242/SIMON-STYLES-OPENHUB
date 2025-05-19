@@ -41,7 +41,7 @@ export default function ContactPage() {
                     <Mail className="h-6 w-6 mr-4 mt-1 text-primary shrink-0" />
                     <div>
                       <h4 className="font-semibold text-foreground">Email</h4>
-                      <p>info@opensourcehub.com</p>
+                      <p>info@simonstylesopenhub.com</p>
                     </div>
                   </div>
                 </div>
