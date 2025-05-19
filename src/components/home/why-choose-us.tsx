@@ -57,7 +57,7 @@ export function WhyChooseUs() {
           </div>
           <div className={`relative transition-all duration-1000 ease-out delay-200 ${mounted ? 'opacity-100 scale-100' : 'opacity-0 scale-90'}`}>
             <Image
-              src="https://picsum.photos/500/450"
+              src="https://picsum.photos/seed/team_meeting/500/450"
               alt="Team working on a project"
               width={500}
               height={450}
