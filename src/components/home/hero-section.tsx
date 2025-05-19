@@ -4,8 +4,7 @@
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
-// Removed Image import, added AnimatedForexChartPlaceholder import
-import { AnimatedForexChartPlaceholder } from '@/components/shared/animated-forex-chart-placeholder';
+import Image from 'next/image'; // Added Image import
 import { useEffect, useState } from 'react';
 
 export function HeroSection() {
@@ -38,10 +37,16 @@ export function HeroSection() {
             </div>
           </div>
           <div className={`relative transition-all duration-1000 ease-out delay-200 ${mounted ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-10'}`}>
-            {/* Replaced Image with a container for AnimatedForexChartPlaceholder */}
-            <div className="w-full max-w-[600px] h-[400px] md:h-[450px] lg:h-[500px] rounded-xl shadow-2xl overflow-hidden mx-auto bg-card">
-              <AnimatedForexChartPlaceholder />
-            </div>
+            {/* Replaced AnimatedForexChartPlaceholder with an Image component */}
+            <Image
+              src="https://picsum.photos/seed/website_development_online/600/400"
+              alt="Modern website development concept with code and abstract designs"
+              width={600}
+              height={400}
+              className="rounded-xl shadow-2xl object-cover mx-auto"
+              data-ai-hint="website development"
+              priority // Added priority for LCP image
+            />
              <div className="absolute -top-8 -right-8 w-32 h-32 bg-accent/20 rounded-full filter blur-2xl animate-pulse opacity-50  md:block hidden"></div>
              <div className="absolute -bottom-8 -left-8 w-40 h-40 bg-primary/10 rounded-full filter blur-3xl animate-pulse opacity-50 delay-500 md:block hidden"></div>
           </div>
