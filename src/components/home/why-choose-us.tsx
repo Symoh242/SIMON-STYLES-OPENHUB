@@ -57,12 +57,12 @@ export function WhyChooseUs() {
           </div>
           <div className={`relative transition-all duration-1000 ease-out delay-200 ${mounted ? 'opacity-100 scale-100' : 'opacity-0 scale-90'}`}>
             <Image
-              src="https://picsum.photos/seed/team_meeting/500/450"
-              alt="Team working on a project"
+              src="https://picsum.photos/seed/developer_team/500/450"
+              alt="Developer team working on a project"
               width={500}
               height={450}
               className="rounded-xl shadow-xl object-cover mx-auto"
-              data-ai-hint="team meeting"
+              data-ai-hint="developer team"
             />
           </div>
         </div>
@@ -70,3 +70,4 @@ export function WhyChooseUs() {
     </section>
   );
 }
+

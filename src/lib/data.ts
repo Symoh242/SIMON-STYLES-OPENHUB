@@ -56,8 +56,8 @@ export const servicesData: Service[] = [
     description: 'Building robust and scalable software systems for various platforms.',
     longDescription: 'We specialize in developing custom software systems, including enterprise applications, CRM solutions, and backend infrastructures. Our approach emphasizes reliability, security, and scalability, ensuring your systems can grow with your business. We work closely with you to understand your requirements and deliver tailored solutions that streamline operations and enhance productivity.',
     icon: Database,
-    imageUrl: 'https://picsum.photos/seed/abstract_code/600/400',
-    dataAiHint: 'abstract code'
+    imageUrl: 'https://picsum.photos/seed/server_code/600/400',
+    dataAiHint: 'server code'
   },
   {
     id: 'blockchain-dev',
@@ -65,8 +65,8 @@ export const servicesData: Service[] = [
     description: 'Innovative blockchain solutions for decentralized applications.',
     longDescription: 'Explore the potential of decentralized technology with our blockchain development services. We design and build custom blockchain solutions, smart contracts, and DApps across various platforms. Whether you are looking to integrate blockchain into your existing systems or build a new decentralized application, our experts can guide you through the process.',
     icon: Share2,
-    imageUrl: 'https://picsum.photos/seed/crypto_code/600/400',
-    dataAiHint: 'crypto code'
+    imageUrl: 'https://picsum.photos/seed/blockchain_code/600/400',
+    dataAiHint: 'blockchain code'
   },
   {
     id: 'web3-services',
@@ -74,8 +74,8 @@ export const servicesData: Service[] = [
     description: 'Comprehensive services for the next generation of the internet.',
     longDescription: 'Navigate the evolving Web3 landscape with our expert services. We offer consultation, development, and integration for NFT marketplaces, DeFi platforms, DAOs, and more. Our team stays at the forefront of Web3 technologies to help you leverage decentralization, tokenization, and community-driven ecosystems for innovative business models.',
     icon: Code,
-    imageUrl: 'https://picsum.photos/seed/web3_code/600/400',
-    dataAiHint: 'web3 code'
+    imageUrl: 'https://picsum.photos/seed/web3_interface/600/400',
+    dataAiHint: 'web3 interface'
   },
 ];
 
@@ -187,3 +187,4 @@ export const testimonialsData: Testimonial[] = [
     dataAiHint: 'data analytics'
   },
 ];
+
