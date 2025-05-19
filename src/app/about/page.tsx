@@ -21,7 +21,7 @@ export default function AboutPage() {
                 Our Open-Source Philosophy
               </h2>
               <p className="mt-4 text-lg text-muted-foreground">
-                At OpenSource Hub, we are passionate advocates for the power of open-source technology. We believe that collaboration, transparency, and community-driven development are key to building innovative and impactful solutions. 
+                At OpenSource Hub, we are passionate advocates for the power of open-source technology. We believe that collaboration, transparency, and community-driven development are key to building innovative and impactful solutions.
               </p>
               <p className="mt-4 text-lg text-muted-foreground">
                 Our commitment extends beyond just using open-source tools; we actively contribute to the community, share our knowledge, and foster an environment where open principles thrive. This approach allows us to deliver robust, flexible, and cost-effective services to our clients.
@@ -29,7 +29,7 @@ export default function AboutPage() {
             </div>
             <div className="relative aspect-video rounded-xl overflow-hidden shadow-lg">
                  <Image
-                    src="https://picsum.photos/seed/opensource/600/400"
+                    src="https://placehold.co/600x400.png"
                     alt="Open Source Collaboration"
                     layout="fill"
                     objectFit="cover"
