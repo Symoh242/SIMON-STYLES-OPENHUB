@@ -48,7 +48,7 @@ export const servicesData: Service[] = [
     longDescription: 'Our web development services focus on creating high-performance, feature-rich, and visually stunning websites. We utilize the latest technologies and frameworks to ensure your online presence is robust, scalable, and user-friendly. From e-commerce platforms to corporate websites, we deliver solutions that drive engagement and achieve business goals.',
     icon: Globe,
     imageUrl: 'https://picsum.photos/600/400',
-    dataAiHint: 'web interface'
+    dataAiHint: 'programming code'
   },
   {
     id: 'system-dev',
@@ -57,7 +57,7 @@ export const servicesData: Service[] = [
     longDescription: 'We specialize in developing custom software systems, including enterprise applications, CRM solutions, and backend infrastructures. Our approach emphasizes reliability, security, and scalability, ensuring your systems can grow with your business. We work closely with you to understand your requirements and deliver tailored solutions that streamline operations and enhance productivity.',
     icon: Database,
     imageUrl: 'https://picsum.photos/600/400',
-    dataAiHint: 'network diagram'
+    dataAiHint: 'abstract code'
   },
   {
     id: 'blockchain-dev',
@@ -66,7 +66,7 @@ export const servicesData: Service[] = [
     longDescription: 'Explore the potential of decentralized technology with our blockchain development services. We design and build custom blockchain solutions, smart contracts, and DApps across various platforms. Whether you are looking to integrate blockchain into your existing systems or build a new decentralized application, our experts can guide you through the process.',
     icon: Share2,
     imageUrl: 'https://picsum.photos/600/400',
-    dataAiHint: 'blockchain network'
+    dataAiHint: 'crypto code'
   },
   {
     id: 'web3-services',
@@ -75,7 +75,7 @@ export const servicesData: Service[] = [
     longDescription: 'Navigate the evolving Web3 landscape with our expert services. We offer consultation, development, and integration for NFT marketplaces, DeFi platforms, DAOs, and more. Our team stays at the forefront of Web3 technologies to help you leverage decentralization, tokenization, and community-driven ecosystems for innovative business models.',
     icon: Code,
     imageUrl: 'https://picsum.photos/600/400',
-    dataAiHint: 'digital world'
+    dataAiHint: 'web3 code'
   },
 ];
 
