@@ -125,7 +125,7 @@ export const directorsData: Director[] = [
     title: 'CEO & Lead Strategist',
     bio: 'Alice drives the vision of OpenSource Hub, leveraging her extensive experience in tech leadership and open-source advocacy to foster innovation and growth.',
     imageUrl: 'https://picsum.photos/300/300',
-    dataAiHint: 'professional woman'
+    dataAiHint: 'programming enthusiasm'
   },
   {
     id: 'director-2',
@@ -133,7 +133,7 @@ export const directorsData: Director[] = [
     title: 'CTO & Head of Engineering',
     bio: 'Bob leads our talented engineering teams, ensuring technical excellence and the adoption of cutting-edge technologies in all our projects.',
     imageUrl: 'https://picsum.photos/300/300',
-    dataAiHint: 'professional man'
+    dataAiHint: 'machine learning'
   },
   {
     id: 'director-3',
@@ -141,7 +141,7 @@ export const directorsData: Director[] = [
     title: 'Head of Blockchain & Web3',
     bio: 'Carol is a pioneer in the blockchain space, guiding our Web3 initiatives and helping clients navigate the complexities of decentralized technologies.',
     imageUrl: 'https://picsum.photos/300/300',
-    dataAiHint: 'tech woman'
+    dataAiHint: 'code enthusiasm'
   },
   {
     id: 'director-4',
@@ -149,7 +149,7 @@ export const directorsData: Director[] = [
     title: 'Director of Operations',
     bio: 'Dave ensures smooth operations and project delivery, focusing on client satisfaction and efficient processes across the company.',
     imageUrl: 'https://picsum.photos/300/300',
-    dataAiHint: 'male professional'
+    dataAiHint: 'ml programming'
   },
 ];
 
