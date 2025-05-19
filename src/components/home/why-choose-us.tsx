@@ -57,12 +57,12 @@ export function WhyChooseUs() {
           </div>
           <div className={`relative transition-all duration-1000 ease-out delay-200 ${mounted ? 'opacity-100 scale-100' : 'opacity-0 scale-90'}`}>
             <Image
-              src="https://picsum.photos/seed/team_coding_laptops/500/450"
+              src="https://picsum.photos/seed/alejandro_escamilla_team_coding_laptops/500/450"
               alt="Developer team collaborating and coding on laptops"
               width={500}
               height={450}
               className="rounded-xl shadow-xl object-cover mx-auto"
-              data-ai-hint="team coding"
+              data-ai-hint="alejandro team"
             />
           </div>
         </div>

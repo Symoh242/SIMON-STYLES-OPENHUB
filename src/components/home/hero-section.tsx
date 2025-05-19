@@ -37,12 +37,12 @@ export function HeroSection() {
           </div>
           <div className={`relative transition-all duration-1000 ease-out delay-200 ${mounted ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-10'}`}>
             <Image
-              src="https://picsum.photos/seed/black_developer_coding/600/400"
-              alt="Developer working on website development online for Simon Styles Hub"
+              src="https://picsum.photos/seed/alejandro_escamilla_black_developer_coding/600/400"
+              alt="Developer working on website development online for Simon Styles Hub, black skin Africa"
               width={600}
               height={400}
               className="rounded-xl shadow-2xl object-cover mx-auto"
-              data-ai-hint="black developer code"
+              data-ai-hint="alejandro developer"
               priority
             />
              <div className="absolute -top-8 -right-8 w-32 h-32 bg-accent/20 rounded-full filter blur-2xl animate-pulse opacity-50  md:block hidden"></div>
