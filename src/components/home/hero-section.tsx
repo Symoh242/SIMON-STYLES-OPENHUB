@@ -37,8 +37,8 @@ export function HeroSection() {
           </div>
           <div className={`relative transition-all duration-1000 ease-out delay-200 ${mounted ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-10'}`}>
             <Image
-              src="https://picsum.photos/seed/alejandro_escamilla_black_developer_coding/600/400"
-              alt="Developer working on website development online for Simon Styles Hub, black skin Africa"
+              src="https://picsum.photos/id/1/600/400"
+              alt="Person working on a laptop for Simon Styles Hub"
               width={600}
               height={400}
               className="rounded-xl shadow-2xl object-cover mx-auto"

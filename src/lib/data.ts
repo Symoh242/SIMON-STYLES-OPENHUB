@@ -47,7 +47,7 @@ export const servicesData: Service[] = [
     description: 'Crafting modern, responsive websites tailored to your needs.',
     longDescription: 'Our web development services focus on creating high-performance, feature-rich, and visually stunning websites. We utilize the latest technologies and frameworks to ensure your online presence is robust, scalable, and user-friendly. From e-commerce platforms to corporate websites, we deliver solutions that drive engagement and achieve business goals.',
     icon: Globe,
-    imageUrl: 'https://picsum.photos/seed/alejandro_escamilla_laptop_web_dev/600/400',
+    imageUrl: 'https://picsum.photos/id/1/600/400',
     dataAiHint: 'alejandro laptop'
   },
   {
@@ -56,8 +56,8 @@ export const servicesData: Service[] = [
     description: 'Building robust and scalable software systems for various platforms.',
     longDescription: 'We specialize in developing custom software systems, including enterprise applications, CRM solutions, and backend infrastructures. Our approach emphasizes reliability, security, and scalability, ensuring your systems can grow with your business. We work closely with you to understand your requirements and deliver tailored solutions that streamline operations and enhance productivity.',
     icon: Database,
-    imageUrl: 'https://picsum.photos/seed/alejandro_escamilla_laptop_system_dev/600/400',
-    dataAiHint: 'alejandro system'
+    imageUrl: 'https://picsum.photos/id/1/600/400',
+    dataAiHint: 'alejandro laptop'
   },
   {
     id: 'blockchain-dev',
@@ -65,8 +65,8 @@ export const servicesData: Service[] = [
     description: 'Innovative blockchain solutions for decentralized applications.',
     longDescription: 'Explore the potential of decentralized technology with our blockchain development services. We design and build custom blockchain solutions, smart contracts, and DApps across various platforms. Whether you are looking to integrate blockchain into your existing systems or build a new decentralized application, our experts can guide you through the process.',
     icon: Share2,
-    imageUrl: 'https://picsum.photos/seed/alejandro_escamilla_laptop_blockchain_dev/600/400',
-    dataAiHint: 'alejandro blockchain'
+    imageUrl: 'https://picsum.photos/id/1/600/400',
+    dataAiHint: 'alejandro laptop'
   },
   {
     id: 'web3-services',
@@ -74,8 +74,8 @@ export const servicesData: Service[] = [
     description: 'Comprehensive services for the next generation of the internet.',
     longDescription: 'Navigate the evolving Web3 landscape with our expert services. We offer consultation, development, and integration for NFT marketplaces, DeFi platforms, DAOs, and more. Our team stays at the forefront of Web3 technologies to help you leverage decentralization, tokenization, and community-driven ecosystems for innovative business models.',
     icon: Code,
-    imageUrl: 'https://picsum.photos/seed/alejandro_escamilla_laptop_web3_services/600/400',
-    dataAiHint: 'alejandro web3'
+    imageUrl: 'https://picsum.photos/id/1/600/400',
+    dataAiHint: 'alejandro laptop'
   },
 ];
 
@@ -86,8 +86,8 @@ export const laptopsData: Laptop[] = [
     model: 'XPS 13',
     specs: ['Intel Core i7', '16GB RAM', '512GB SSD', '13.3" FHD Display'],
     dailyCharge: 1500,
-    imageUrl: 'https://picsum.photos/seed/alejandro_escamilla_dell_xps/400/300',
-    dataAiHint: 'alejandro dell'
+    imageUrl: 'https://picsum.photos/id/1/400/300',
+    dataAiHint: 'alejandro laptop'
   },
   {
     id: 'laptop-2',
@@ -95,8 +95,8 @@ export const laptopsData: Laptop[] = [
     model: 'MacBook Pro 14"',
     specs: ['M3 Pro Chip', '18GB RAM', '512GB SSD', '14" Liquid Retina XDR'],
     dailyCharge: 2500,
-    imageUrl: 'https://picsum.photos/seed/alejandro_escamilla_macbook_pro/400/300',
-    dataAiHint: 'alejandro macbook'
+    imageUrl: 'https://picsum.photos/id/1/400/300',
+    dataAiHint: 'alejandro laptop'
   },
   {
     id: 'laptop-3',
@@ -104,8 +104,8 @@ export const laptopsData: Laptop[] = [
     model: 'ThinkPad X1 Carbon',
     specs: ['Intel Core i5', '16GB RAM', '1TB SSD', '14" WQHD Display'],
     dailyCharge: 1800,
-    imageUrl: 'https://picsum.photos/seed/alejandro_escamilla_lenovo_thinkpad/400/300',
-    dataAiHint: 'alejandro thinkpad'
+    imageUrl: 'https://picsum.photos/id/1/400/300',
+    dataAiHint: 'alejandro laptop'
   },
   {
     id: 'laptop-4',
@@ -113,8 +113,8 @@ export const laptopsData: Laptop[] = [
     model: 'Spectre x360',
     specs: ['Intel Core i7', '16GB RAM', '512GB SSD', '13.5" OLED Touch'],
     dailyCharge: 2000,
-    imageUrl: 'https://picsum.photos/seed/alejandro_escamilla_hp_spectre/400/300',
-    dataAiHint: 'alejandro spectre'
+    imageUrl: 'https://picsum.photos/id/1/400/300',
+    dataAiHint: 'alejandro laptop'
   },
 ];
 
@@ -124,32 +124,32 @@ export const directorsData: Director[] = [
     name: 'Alice Wonderland',
     title: 'CEO & Lead Strategist',
     bio: 'Alice drives the vision of Simon Styles Hub, leveraging her extensive experience in tech leadership and open-source advocacy to foster innovation and growth.',
-    imageUrl: 'https://picsum.photos/seed/alejandro_escamilla_programming_enthusiasm/300/300',
-    dataAiHint: 'alejandro programming'
+    imageUrl: 'https://picsum.photos/id/1/300/300',
+    dataAiHint: 'alejandro laptop'
   },
   {
     id: 'director-2',
     name: 'Bob The Builder',
     title: 'CTO & Head of Engineering',
     bio: 'Bob leads our talented engineering teams, ensuring technical excellence and the adoption of cutting-edge technologies in all our projects.',
-    imageUrl: 'https://picsum.photos/seed/alejandro_escamilla_machine_learning_code/300/300',
-    dataAiHint: 'alejandro machine'
+    imageUrl: 'https://picsum.photos/id/1/300/300',
+    dataAiHint: 'alejandro laptop'
   },
   {
     id: 'director-3',
     name: 'Carol Danvers',
     title: 'Head of Blockchain & Web3',
     bio: 'Carol is a pioneer in the blockchain space, guiding our Web3 initiatives and helping clients navigate the complexities of decentralized technologies.',
-    imageUrl: 'https://picsum.photos/seed/alejandro_escamilla_programming_coffee/300/300',
-    dataAiHint: 'alejandro coffee'
+    imageUrl: 'https://picsum.photos/id/1/300/300',
+    dataAiHint: 'alejandro laptop'
   },
   {
     id: 'director-4',
     name: 'Dave Lister',
     title: 'Director of Operations',
     bio: 'Dave ensures smooth operations and project delivery, focusing on client satisfaction and efficient processes across the company.',
-    imageUrl: 'https://picsum.photos/seed/alejandro_escamilla_machine_learning_team/300/300',
-    dataAiHint: 'alejandro team'
+    imageUrl: 'https://picsum.photos/id/1/300/300',
+    dataAiHint: 'alejandro laptop'
   },
 ];
 
@@ -159,31 +159,31 @@ export const testimonialsData: Testimonial[] = [
     projectName: 'EcoFriendly Marketplace',
     description: 'Simon Styles Hub developed a stunning e-commerce platform that boosted our sales by 40%. Their team was professional and highly skilled.',
     websiteUrl: '#',
-    imageUrl: 'https://picsum.photos/seed/alejandro_escamilla_ecommerce_interface/500/350',
-    dataAiHint: 'alejandro ecommerce'
+    imageUrl: 'https://picsum.photos/id/1/500/350',
+    dataAiHint: 'alejandro project'
   },
   {
     id: 'testimonial-2',
     projectName: 'Decentralized Finance App',
     description: 'Their expertise in blockchain technology was invaluable in creating our DeFi application. Highly recommended for Web3 projects.',
     websiteUrl: '#',
-    imageUrl: 'https://picsum.photos/seed/alejandro_escamilla_defi_dashboard/500/350',
-    dataAiHint: 'alejandro defi'
+    imageUrl: 'https://picsum.photos/id/1/500/350',
+    dataAiHint: 'alejandro project'
   },
   {
     id: 'testimonial-3',
     projectName: 'Community Portal System',
     description: 'The custom system they built streamlined our community management. Excellent communication and on-time delivery.',
     websiteUrl: '#',
-    imageUrl: 'https://picsum.photos/seed/alejandro_escamilla_community_platform/500/350',
-    dataAiHint: 'alejandro community'
+    imageUrl: 'https://picsum.photos/id/1/500/350',
+    dataAiHint: 'alejandro project'
   },
   {
     id: 'testimonial-4',
     projectName: 'AI Powered Analytics Tool',
     description: 'We are extremely pleased with the analytics tool developed by Simon Styles Hub. It has provided us with critical insights for our business strategy.',
     websiteUrl: '#',
-    imageUrl: 'https://picsum.photos/seed/alejandro_escamilla_ai_dashboard/500/350',
-    dataAiHint: 'alejandro dashboard'
+    imageUrl: 'https://picsum.photos/id/1/500/350',
+    dataAiHint: 'alejandro project'
   },
 ];
