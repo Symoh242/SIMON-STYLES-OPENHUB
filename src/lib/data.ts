@@ -47,7 +47,7 @@ export const servicesData: Service[] = [
     description: 'Crafting modern, responsive websites tailored to your needs.',
     longDescription: 'Our web development services focus on creating high-performance, feature-rich, and visually stunning websites. We utilize the latest technologies and frameworks to ensure your online presence is robust, scalable, and user-friendly. From e-commerce platforms to corporate websites, we deliver solutions that drive engagement and achieve business goals.',
     icon: Globe,
-    imageUrl: 'https://placehold.co/600x400.png',
+    imageUrl: 'https://picsum.photos/600/400',
     dataAiHint: 'web interface'
   },
   {
@@ -56,7 +56,7 @@ export const servicesData: Service[] = [
     description: 'Building robust and scalable software systems for various platforms.',
     longDescription: 'We specialize in developing custom software systems, including enterprise applications, CRM solutions, and backend infrastructures. Our approach emphasizes reliability, security, and scalability, ensuring your systems can grow with your business. We work closely with you to understand your requirements and deliver tailored solutions that streamline operations and enhance productivity.',
     icon: Database,
-    imageUrl: 'https://placehold.co/600x400.png',
+    imageUrl: 'https://picsum.photos/600/400',
     dataAiHint: 'network diagram'
   },
   {
@@ -65,7 +65,7 @@ export const servicesData: Service[] = [
     description: 'Innovative blockchain solutions for decentralized applications.',
     longDescription: 'Explore the potential of decentralized technology with our blockchain development services. We design and build custom blockchain solutions, smart contracts, and DApps across various platforms. Whether you are looking to integrate blockchain into your existing systems or build a new decentralized application, our experts can guide you through the process.',
     icon: Share2,
-    imageUrl: 'https://placehold.co/600x400.png',
+    imageUrl: 'https://picsum.photos/600/400',
     dataAiHint: 'blockchain network'
   },
   {
@@ -74,7 +74,7 @@ export const servicesData: Service[] = [
     description: 'Comprehensive services for the next generation of the internet.',
     longDescription: 'Navigate the evolving Web3 landscape with our expert services. We offer consultation, development, and integration for NFT marketplaces, DeFi platforms, DAOs, and more. Our team stays at the forefront of Web3 technologies to help you leverage decentralization, tokenization, and community-driven ecosystems for innovative business models.',
     icon: Code,
-    imageUrl: 'https://placehold.co/600x400.png',
+    imageUrl: 'https://picsum.photos/600/400',
     dataAiHint: 'digital world'
   },
 ];
@@ -86,7 +86,7 @@ export const laptopsData: Laptop[] = [
     model: 'XPS 13',
     specs: ['Intel Core i7', '16GB RAM', '512GB SSD', '13.3" FHD Display'],
     dailyCharge: 1500,
-    imageUrl: 'https://placehold.co/400x300.png',
+    imageUrl: 'https://picsum.photos/400/300',
     dataAiHint: 'modern laptop'
   },
   {
@@ -95,7 +95,7 @@ export const laptopsData: Laptop[] = [
     model: 'MacBook Pro 14"',
     specs: ['M3 Pro Chip', '18GB RAM', '512GB SSD', '14" Liquid Retina XDR'],
     dailyCharge: 2500,
-    imageUrl: 'https://placehold.co/400x300.png',
+    imageUrl: 'https://picsum.photos/400/300',
     dataAiHint: 'sleek laptop'
   },
   {
@@ -104,7 +104,7 @@ export const laptopsData: Laptop[] = [
     model: 'ThinkPad X1 Carbon',
     specs: ['Intel Core i5', '16GB RAM', '1TB SSD', '14" WQHD Display'],
     dailyCharge: 1800,
-    imageUrl: 'https://placehold.co/400x300.png',
+    imageUrl: 'https://picsum.photos/400/300',
     dataAiHint: 'business laptop'
   },
   {
@@ -113,7 +113,7 @@ export const laptopsData: Laptop[] = [
     model: 'Spectre x360',
     specs: ['Intel Core i7', '16GB RAM', '512GB SSD', '13.5" OLED Touch'],
     dailyCharge: 2000,
-    imageUrl: 'https://placehold.co/400x300.png',
+    imageUrl: 'https://picsum.photos/400/300',
     dataAiHint: 'convertible laptop'
   },
 ];
@@ -124,7 +124,7 @@ export const directorsData: Director[] = [
     name: 'Alice Wonderland',
     title: 'CEO & Lead Strategist',
     bio: 'Alice drives the vision of OpenSource Hub, leveraging her extensive experience in tech leadership and open-source advocacy to foster innovation and growth.',
-    imageUrl: 'https://placehold.co/300x300.png',
+    imageUrl: 'https://picsum.photos/300/300',
     dataAiHint: 'professional woman'
   },
   {
@@ -132,7 +132,7 @@ export const directorsData: Director[] = [
     name: 'Bob The Builder',
     title: 'CTO & Head of Engineering',
     bio: 'Bob leads our talented engineering teams, ensuring technical excellence and the adoption of cutting-edge technologies in all our projects.',
-    imageUrl: 'https://placehold.co/300x300.png',
+    imageUrl: 'https://picsum.photos/300/300',
     dataAiHint: 'professional man'
   },
   {
@@ -140,7 +140,7 @@ export const directorsData: Director[] = [
     name: 'Carol Danvers',
     title: 'Head of Blockchain & Web3',
     bio: 'Carol is a pioneer in the blockchain space, guiding our Web3 initiatives and helping clients navigate the complexities of decentralized technologies.',
-    imageUrl: 'https://placehold.co/300x300.png',
+    imageUrl: 'https://picsum.photos/300/300',
     dataAiHint: 'tech woman'
   },
   {
@@ -148,7 +148,7 @@ export const directorsData: Director[] = [
     name: 'Dave Lister',
     title: 'Director of Operations',
     bio: 'Dave ensures smooth operations and project delivery, focusing on client satisfaction and efficient processes across the company.',
-    imageUrl: 'https://placehold.co/300x300.png',
+    imageUrl: 'https://picsum.photos/300/300',
     dataAiHint: 'male professional'
   },
 ];
@@ -159,7 +159,7 @@ export const testimonialsData: Testimonial[] = [
     projectName: 'EcoFriendly Marketplace',
     description: 'OpenSource Hub developed a stunning e-commerce platform that boosted our sales by 40%. Their team was professional and highly skilled.',
     websiteUrl: '#',
-    imageUrl: 'https://placehold.co/500x350.png',
+    imageUrl: 'https://picsum.photos/500/350',
     dataAiHint: 'ecommerce website'
   },
   {
@@ -167,7 +167,7 @@ export const testimonialsData: Testimonial[] = [
     projectName: 'Decentralized Finance App',
     description: 'Their expertise in blockchain technology was invaluable in creating our DeFi application. Highly recommended for Web3 projects.',
     websiteUrl: '#',
-    imageUrl: 'https://placehold.co/500x350.png',
+    imageUrl: 'https://picsum.photos/500/350',
     dataAiHint: 'crypto dashboard'
   },
   {
@@ -175,7 +175,7 @@ export const testimonialsData: Testimonial[] = [
     projectName: 'Community Portal System',
     description: 'The custom system they built streamlined our community management. Excellent communication and on-time delivery.',
     websiteUrl: '#',
-    imageUrl: 'https://placehold.co/500x350.png',
+    imageUrl: 'https://picsum.photos/500/350',
     dataAiHint: 'social platform'
   },
   {
@@ -183,7 +183,7 @@ export const testimonialsData: Testimonial[] = [
     projectName: 'AI Powered Analytics Tool',
     description: 'We are extremely pleased with the analytics tool developed by OpenSource Hub. It has provided us with critical insights for our business strategy.',
     websiteUrl: '#',
-    imageUrl: 'https://placehold.co/500x350.png',
+    imageUrl: 'https://picsum.photos/500/350',
     dataAiHint: 'data analytics'
   },
 ];

@@ -29,7 +29,7 @@ export default function AboutPage() {
             </div>
             <div className="relative aspect-video rounded-xl overflow-hidden shadow-lg">
                  <Image
-                    src="https://placehold.co/600x400.png"
+                    src="https://picsum.photos/600/400"
                     alt="Open Source Collaboration"
                     layout="fill"
                     objectFit="cover"

@@ -38,7 +38,7 @@ export function HeroSection() {
           </div>
           <div className={`relative transition-all duration-1000 ease-out delay-200 ${mounted ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-10'}`}>
             <Image
-              src="https://placehold.co/600x500.png"
+              src="https://picsum.photos/600/500"
               alt="Collaborative Development Environment"
               width={600}
               height={500}
