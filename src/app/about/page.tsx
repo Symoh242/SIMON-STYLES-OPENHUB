@@ -33,7 +33,7 @@ export default function AboutPage() {
                     alt="Open Source Collaboration"
                     layout="fill"
                     objectFit="cover"
-                    data-ai-hint="open source community"
+                    data-ai-hint="community collaboration"
                   />
             </div>
           </div>
