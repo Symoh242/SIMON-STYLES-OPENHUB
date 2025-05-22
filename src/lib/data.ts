@@ -121,33 +121,33 @@ export const laptopsData: Laptop[] = [
 export const directorsData: Director[] = [
   {
     id: 'director-1',
-    name: 'Alice Wonderland',
-    title: 'CEO & Lead Strategist',
-    bio: 'Alice drives the vision of Simon Styles Hub, leveraging her extensive experience in tech leadership and open-source advocacy to foster innovation and growth.',
+    name: 'Simon Maina Wanjiru',
+    title: 'CEO and Founder',
+    bio: 'Simon leads Simon Styles Hub with a vision for innovation and excellence, drawing on extensive experience in technology and leadership.',
     imageUrl: 'https://picsum.photos/id/1/300/300',
     dataAiHint: 'alejandro laptop'
   },
   {
     id: 'director-2',
-    name: 'Bob The Builder',
-    title: 'CTO & Head of Engineering',
-    bio: 'Bob leads our talented engineering teams, ensuring technical excellence and the adoption of cutting-edge technologies in all our projects.',
+    name: 'Mathew Ndeto',
+    title: 'Lead Engineer Developer',
+    bio: 'Mathew spearheads our engineering efforts, ensuring the development of robust and cutting-edge solutions.',
     imageUrl: 'https://picsum.photos/id/1/300/300',
     dataAiHint: 'alejandro laptop'
   },
   {
     id: 'director-3',
-    name: 'Carol Danvers',
-    title: 'Head of Blockchain & Web3',
-    bio: 'Carol is a pioneer in the blockchain space, guiding our Web3 initiatives and helping clients navigate the complexities of decentralized technologies.',
+    name: 'Anthony Waweru',
+    title: 'System Analyst',
+    bio: 'Anthony provides critical insights through system analysis, optimizing processes and technology for Simon Styles Hub.',
     imageUrl: 'https://picsum.photos/id/1/300/300',
     dataAiHint: 'alejandro laptop'
   },
   {
     id: 'director-4',
-    name: 'Dave Lister',
-    title: 'Director of Operations',
-    bio: 'Dave ensures smooth operations and project delivery, focusing on client satisfaction and efficient processes across the company.',
+    name: 'Esther Nyambura',
+    title: 'Lead Developer',
+    bio: 'Esther plays a key role in our development team, contributing to the creation of high-quality software solutions.',
     imageUrl: 'https://picsum.photos/id/1/300/300',
     dataAiHint: 'alejandro laptop'
   },
@@ -187,3 +187,4 @@ export const testimonialsData: Testimonial[] = [
     dataAiHint: 'alejandro project'
   },
 ];
+
