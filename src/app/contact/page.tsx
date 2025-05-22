@@ -27,21 +27,22 @@ export default function ContactPage() {
                     <MapPin className="h-6 w-6 mr-4 mt-1 text-primary shrink-0" />
                     <div>
                       <h4 className="font-semibold text-foreground">Our Office</h4>
-                      <p>123 OpenSource Lane, Innovation City, OS 12345</p>
+                      <p>Revlon Professional Plaza, 2nd Floor, Shop Number One</p>
                     </div>
                   </div>
                   <div className="flex items-start">
                     <Phone className="h-6 w-6 mr-4 mt-1 text-primary shrink-0" />
                     <div>
                       <h4 className="font-semibold text-foreground">Phone</h4>
-                      <p>+1 (555) 123-4567</p>
+                      <p>0758673616</p>
+                      <p>0100586619</p>
                     </div>
                   </div>
                   <div className="flex items-start">
                     <Mail className="h-6 w-6 mr-4 mt-1 text-primary shrink-0" />
                     <div>
                       <h4 className="font-semibold text-foreground">Email</h4>
-                      <p>info@simonstylesopenhub.com</p>
+                      <p>simonwanjiru224@gmail.com</p>
                     </div>
                   </div>
                 </div>
