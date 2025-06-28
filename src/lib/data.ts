@@ -1,190 +1,48 @@
 
-import type { LucideIcon } from 'lucide-react';
-import { Code, Database, Share2, Globe } from 'lucide-react';
-
-export interface Service {
+export interface BlogPost {
   id: string;
+  slug: string;
   title: string;
-  description: string;
-  longDescription: string;
-  icon: LucideIcon;
-  imageUrl?: string;
-  dataAiHint?: string;
-}
-
-export interface Laptop {
-  id: string;
-  brand: string;
-  model: string;
-  specs: string[];
-  dailyCharge: number;
+  excerpt: string;
+  content: string;
+  author: string;
+  date: string;
   imageUrl: string;
   dataAiHint: string;
 }
 
-export interface Director {
-  id: string;
-  name: string;
-  title: string;
-  bio: string;
-  imageUrl: string;
-  dataAiHint: string;
-}
-
-export interface Testimonial {
-  id:string;
-  projectName: string;
-  description: string;
-  websiteUrl: string;
-  imageUrl: string;
-  dataAiHint: string;
-}
-
-export const servicesData: Service[] = [
+export const blogPostsData: BlogPost[] = [
   {
-    id: 'web-dev',
-    title: 'Web Development',
-    description: 'Crafting modern, responsive websites tailored to your needs.',
-    longDescription: 'Our web development services focus on creating high-performance, feature-rich, and visually stunning websites. We utilize the latest technologies and frameworks to ensure your online presence is robust, scalable, and user-friendly. From e-commerce platforms to corporate websites, we deliver solutions that drive engagement and achieve business goals.',
-    icon: Globe,
-    imageUrl: 'https://picsum.photos/id/1/600/400',
-    dataAiHint: 'alejandro laptop'
+    id: '1',
+    slug: 'the-cost-of-silence',
+    title: 'The Cost of Silence: A Nation in Waiting',
+    excerpt: 'In the heart of our vibrant nation, a quiet unease simmers. The promises of a brighter future feel distant as everyday citizens grapple with economic hardship and a palpable sense of injustice...',
+    content: `In the heart of our vibrant nation, a quiet unease simmers. The promises of a brighter future feel distant as everyday citizens grapple with economic hardship and a palpable sense of injustice. This is not just a story of politics; it's a story of people. It's the story of the market vendor whose prices are dictated by forces beyond her control, the student who dreams of a job that may not exist, and the parent who fears for their child's safety.\n\nWe are told to be patient, to trust the process. But patience wears thin when the cost of living climbs daily, while accountability remains a foreign concept to those in power. Intimidation, both subtle and overt, has become a tool to quell dissent. Questions are met with threats, and criticism is branded as treason.\n\nThis blog is a space for those stories to be told. It is a testament to the resilience of the Kenyan spirit and a call to reclaim the narrative. We must speak up, not out of malice, but out of a profound love for our country and a desire to see it heal and prosper for all, not just a select few.`,
+    author: 'A Concerned Citizen',
+    date: 'July 26, 2024',
+    imageUrl: 'https://placehold.co/600x400.png',
+    dataAiHint: 'kenya flag',
   },
   {
-    id: 'system-dev',
-    title: 'System Development',
-    description: 'Building robust and scalable software systems for various platforms.',
-    longDescription: 'We specialize in developing custom software systems, including enterprise applications, CRM solutions, and backend infrastructures. Our approach emphasizes reliability, security, and scalability, ensuring your systems can grow with your business. We work closely with you to understand your requirements and deliver tailored solutions that streamline operations and enhance productivity.',
-    icon: Database,
-    imageUrl: 'https://picsum.photos/id/1/600/400',
-    dataAiHint: 'alejandro laptop'
+    id: '2',
+    slug: 'a-generation-betrayed',
+    title: 'A Generation Betrayed: The Youth Cry Out',
+    excerpt: 'They called us the "digital generation," the future leaders. Yet, we find ourselves at a crossroads, armed with education but stripped of opportunity. The system has failed us, and our voices are rising...',
+    content: `They called us the "digital generation," the future leaders. Yet, we find ourselves at a crossroads, armed with education but stripped of opportunity. The system has failed us, and our voices are rising from the streets of Nairobi to the smallest villages.\n\nThe recent protests are not a sign of chaos, but a symptom of a deep-seated betrayal. We marched for our future, for a fair chance, for an end to the corruption that suffocates our potential. In return, we were met with force, with tear gas, and with bullets. Our pleas for dialogue were answered with violence.\n\nThis is the reality for the youth in Kenya today. We are not hooligans; we are patriots. We are not idle; we are fighting for the very soul of our nation. Let this be a record of our struggle, a reminder that the spirit of a generation cannot be silenced.`,
+    author: 'Youth for Kenya',
+    date: 'July 24, 2024',
+    imageUrl: 'https://placehold.co/600x400.png',
+    dataAiHint: 'protest crowd',
   },
   {
-    id: 'blockchain-dev',
-    title: 'Blockchain Development',
-    description: 'Innovative blockchain solutions for decentralized applications.',
-    longDescription: 'Explore the potential of decentralized technology with our blockchain development services. We design and build custom blockchain solutions, smart contracts, and DApps across various platforms. Whether you are looking to integrate blockchain into your existing systems or build a new decentralized application, our experts can guide you through the process.',
-    icon: Share2,
-    imageUrl: 'https://picsum.photos/id/1/600/400',
-    dataAiHint: 'alejandro laptop'
-  },
-  {
-    id: 'web3-services',
-    title: 'Web3 Services',
-    description: 'Comprehensive services for the next generation of the internet.',
-    longDescription: 'Navigate the evolving Web3 landscape with our expert services. We offer consultation, development, and integration for NFT marketplaces, DeFi platforms, DAOs, and more. Our team stays at the forefront of Web3 technologies to help you leverage decentralization, tokenization, and community-driven ecosystems for innovative business models.',
-    icon: Code,
-    imageUrl: 'https://picsum.photos/id/1/600/400',
-    dataAiHint: 'alejandro laptop'
+    id: '3',
+    slug: 'what-is-the-finance-bill',
+    title: 'Explainer: What is the Finance Bill and Why Does It Matter?',
+    excerpt: 'The term "Finance Bill" is on everyone\'s lips, but what does it actually mean for the average Kenyan? Here\'s a simple breakdown of its impact on your wallet and your rights.',
+    content: `The term "Finance Bill" is on everyone's lips, but what does it actually mean for the average Kenyan? It can seem complex, but its effects are simple and direct.\n\nIn essence, the Finance Bill is the government's plan to raise money. It outlines new taxes and changes to existing ones. The recent bill proposed taxes on basic necessities – from bread to mobile money transfers – placing a heavy burden on citizens who are already struggling.\n\nWhy the outrage? Because it felt like a punishment, not a plan. It increased the cost of living without a clear vision for how the money would be used to benefit the people. It represented a disconnect between the government and the governed. Understanding the Finance Bill is the first step to demanding fiscal responsibility and a government that serves its people.`,
+    author: 'Economic Justice Network',
+    date: 'July 22, 2024',
+    imageUrl: 'https://placehold.co/600x400.png',
+    dataAiHint: 'money kenya',
   },
 ];
-
-export const laptopsData: Laptop[] = [
-  {
-    id: 'laptop-1',
-    brand: 'Dell',
-    model: 'XPS 13',
-    specs: ['Intel Core i7', '16GB RAM', '512GB SSD', '13.3" FHD Display'],
-    dailyCharge: 1500,
-    imageUrl: 'https://picsum.photos/id/1/400/300',
-    dataAiHint: 'alejandro laptop'
-  },
-  {
-    id: 'laptop-2',
-    brand: 'Apple',
-    model: 'MacBook Pro 14"',
-    specs: ['M3 Pro Chip', '18GB RAM', '512GB SSD', '14" Liquid Retina XDR'],
-    dailyCharge: 2500,
-    imageUrl: 'https://picsum.photos/id/1/400/300',
-    dataAiHint: 'alejandro laptop'
-  },
-  {
-    id: 'laptop-3',
-    brand: 'Lenovo',
-    model: 'ThinkPad X1 Carbon',
-    specs: ['Intel Core i5', '16GB RAM', '1TB SSD', '14" WQHD Display'],
-    dailyCharge: 1800,
-    imageUrl: 'https://picsum.photos/id/1/400/300',
-    dataAiHint: 'alejandro laptop'
-  },
-  {
-    id: 'laptop-4',
-    brand: 'HP',
-    model: 'Spectre x360',
-    specs: ['Intel Core i7', '16GB RAM', '512GB SSD', '13.5" OLED Touch'],
-    dailyCharge: 2000,
-    imageUrl: 'https://picsum.photos/id/1/400/300',
-    dataAiHint: 'alejandro laptop'
-  },
-];
-
-export const directorsData: Director[] = [
-  {
-    id: 'director-1',
-    name: 'Simon Maina Wanjiru',
-    title: 'CEO and Founder',
-    bio: 'Simon leads Simon Styles Hub with a vision for innovation and excellence, drawing on extensive experience in technology and leadership.',
-    imageUrl: 'https://picsum.photos/id/1/300/300',
-    dataAiHint: 'alejandro laptop'
-  },
-  {
-    id: 'director-2',
-    name: 'Mathew Ndeto',
-    title: 'Lead Engineer Developer',
-    bio: 'Mathew spearheads our engineering efforts, ensuring the development of robust and cutting-edge solutions.',
-    imageUrl: 'https://picsum.photos/id/1/300/300',
-    dataAiHint: 'alejandro laptop'
-  },
-  {
-    id: 'director-3',
-    name: 'Anthony Waweru',
-    title: 'System Analyst',
-    bio: 'Anthony provides critical insights through system analysis, optimizing processes and technology for Simon Styles Hub.',
-    imageUrl: 'https://picsum.photos/id/1/300/300',
-    dataAiHint: 'alejandro laptop'
-  },
-  {
-    id: 'director-4',
-    name: 'Esther Nyambura',
-    title: 'Lead Developer',
-    bio: 'Esther plays a key role in our development team, contributing to the creation of high-quality software solutions.',
-    imageUrl: 'https://picsum.photos/id/1/300/300',
-    dataAiHint: 'alejandro laptop'
-  },
-];
-
-export const testimonialsData: Testimonial[] = [
-  {
-    id: 'testimonial-1',
-    projectName: 'EcoFriendly Marketplace',
-    description: 'Simon Styles Hub developed a stunning e-commerce platform that boosted our sales by 40%. Their team was professional and highly skilled.',
-    websiteUrl: '#',
-    imageUrl: 'https://picsum.photos/id/1/500/350',
-    dataAiHint: 'alejandro project'
-  },
-  {
-    id: 'testimonial-2',
-    projectName: 'Decentralized Finance App',
-    description: 'Their expertise in blockchain technology was invaluable in creating our DeFi application. Highly recommended for Web3 projects.',
-    websiteUrl: '#',
-    imageUrl: 'https://picsum.photos/id/1/500/350',
-    dataAiHint: 'alejandro project'
-  },
-  {
-    id: 'testimonial-3',
-    projectName: 'Community Portal System',
-    description: 'The custom system they built streamlined our community management. Excellent communication and on-time delivery.',
-    websiteUrl: '#',
-    imageUrl: 'https://picsum.photos/id/1/500/350',
-    dataAiHint: 'alejandro project'
-  },
-  {
-    id: 'testimonial-4',
-    projectName: 'AI Powered Analytics Tool',
-    description: 'We are extremely pleased with the analytics tool developed by Simon Styles Hub. It has provided us with critical insights for our business strategy.',
-    websiteUrl: '#',
-    imageUrl: 'https://picsum.photos/id/1/500/350',
-    dataAiHint: 'alejandro project'
-  },
-];
-

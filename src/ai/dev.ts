@@ -1,4 +1,2 @@
-import { config } from 'dotenv';
-config();
 
-import '@/ai/flows/web3-advisor.ts';
+// This file is intentionally left blank.

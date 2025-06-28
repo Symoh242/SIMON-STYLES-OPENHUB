@@ -1,14 +1,12 @@
 
 import { HeroSection } from '@/components/home/hero-section';
-import { ServicesOverview } from '@/components/home/services-overview';
-import { WhyChooseUs } from '@/components/home/why-choose-us';
+import { FeaturedPosts } from '@/components/home/featured-posts';
 
 export default function HomePage() {
   return (
     <>
       <HeroSection />
-      <ServicesOverview />
-      <WhyChooseUs />
+      <FeaturedPosts />
     </>
   );
 }

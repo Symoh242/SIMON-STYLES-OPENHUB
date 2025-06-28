@@ -1,74 +1,62 @@
 
 import { PageHeader } from '@/components/shared/page-header';
-import { directorsData, testimonialsData } from '@/lib/data';
-import { DirectorProfileCard } from '@/components/about/director-profile-card';
-import { TestimonialCard } from '@/components/about/testimonial-card';
 import Image from 'next/image';
+import { Heart, Mic } from 'lucide-react';
 
 export default function AboutPage() {
   return (
     <>
       <PageHeader
-        title="About Simon Styles Hub"
-        description="Learn about our mission, our commitment to open source, and the talented team behind our success."
+        title="About This Space"
+        description="This platform was born out of a necessity to speak truth, to document our stories, and to create a record for the world to see."
       />
 
       <section className="py-16 md:py-24 bg-background">
-        <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="container mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-            <div>
-              <h2 className="text-3xl font-bold tracking-tight text-primary sm:text-4xl">
-                Our Open-Source Philosophy
-              </h2>
-              <p className="mt-4 text-lg text-muted-foreground">
-                At Simon Styles Hub, we are passionate advocates for the power of open-source technology. We believe that collaboration, transparency, and community-driven development are key to building innovative and impactful solutions.
-              </p>
-              <p className="mt-4 text-lg text-muted-foreground">
-                Our commitment extends beyond just using open-source tools; we actively contribute to the community, share our knowledge, and foster an environment where open principles thrive. This approach allows us to deliver robust, flexible, and cost-effective services to our clients.
-              </p>
-            </div>
-            <div className="relative aspect-video rounded-xl overflow-hidden shadow-lg">
+            <div className="relative aspect-square rounded-xl overflow-hidden shadow-lg">
                  <Image
-                    src="https://picsum.photos/id/1/600/400"
-                    alt="Open Source Collaboration - Person working on laptop"
+                    src="https://placehold.co/600/600.png"
+                    alt="Map of Kenya"
                     layout="fill"
                     objectFit="cover"
-                    data-ai-hint="alejandro collaboration"
+                    data-ai-hint="kenya map"
                   />
+            </div>
+            <div>
+              <h2 className="text-3xl font-bold tracking-tight text-primary sm:text-4xl">
+                Our Mission
+              </h2>
+              <p className="mt-4 text-lg text-muted-foreground">
+                We are a collective of ordinary Kenyans who believe in the power of truth and the right to be heard. In times of uncertainty and intimidation, silence is not an option. Our mission is to provide a safe and uncensored platform for citizens to share their experiences, observations, and hopes for a better Kenya.
+              </p>
+              <p className="mt-4 text-lg text-muted-foreground">
+                This is a space free from political affiliation and corporate interest. It is funded by the people, for the people.
+              </p>
             </div>
           </div>
         </div>
       </section>
 
       <section className="py-16 md:py-24 bg-secondary/30">
-        <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold tracking-tight text-primary sm:text-4xl">Meet Our Leadership</h2>
-            <p className="mt-4 text-lg text-muted-foreground">
-              The driving force behind Simon Styles Hub's innovation and success.
-            </p>
-          </div>
-          <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
-            {directorsData.map((director) => (
-              <DirectorProfileCard key={director.id} director={director} />
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="py-16 md:py-24 bg-background">
-        <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold tracking-tight text-primary sm:text-4xl">Success Stories</h2>
-            <p className="mt-4 text-lg text-muted-foreground">
-              See how we've helped businesses like yours achieve their goals.
-            </p>
-          </div>
-          <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
-            {testimonialsData.map((testimonial) => (
-              <TestimonialCard key={testimonial.id} testimonial={testimonial} />
-            ))}
-          </div>
+        <div className="container mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 text-center">
+            <h2 className="text-3xl font-bold tracking-tight text-primary sm:text-4xl">Our Principles</h2>
+            <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-10">
+                <div className="flex flex-col items-center">
+                    <div className="flex h-16 w-16 items-center justify-center rounded-full bg-primary text-primary-foreground mb-4">
+                        <Mic className="h-8 w-8" />
+                    </div>
+                    <h3 className="text-2xl font-semibold mb-2 text-foreground">Unfiltered Voices</h3>
+                    <p className="text-lg text-muted-foreground">We believe every story matters. We publish firsthand accounts and analyses from citizens on the ground, without censorship.</p>
+                </div>
+                <div className="flex flex-col items-center">
+                    <div className="flex h-16 w-16 items-center justify-center rounded-full bg-accent text-accent-foreground mb-4">
+                        <Heart className="h-8 w-8" />
+                    </div>
+                    <h3 className="text-2xl font-semibold mb-2 text-foreground">For Kenya, With Love</h3>
+                    <p className="text-lg text-muted-foreground">Our work is driven by a deep love for our country and its people. We advocate for peace, justice, and accountability.</p>
+                </div>
+            </div>
         </div>
       </section>
     </>

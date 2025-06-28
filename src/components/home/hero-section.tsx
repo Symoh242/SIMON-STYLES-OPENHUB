@@ -3,7 +3,7 @@
 
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, BookOpen } from 'lucide-react';
 import Image from 'next/image';
 import { useEffect, useState } from 'react';
 
@@ -17,32 +17,32 @@ export function HeroSection() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div className={`transition-all duration-1000 ease-out ${mounted ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-10'}`}>
             <h1 className="text-4xl font-extrabold tracking-tight text-foreground sm:text-5xl md:text-6xl">
-              Build the Future with <span className="text-primary">Simon Styles Hub</span>
+              A Voice for <span className="text-primary">the Voiceless</span>
             </h1>
             <p className="mt-6 text-lg leading-8 text-muted-foreground sm:max-w-md lg:max-w-none">
-              Empowering innovation through collaborative open-source development. We offer cutting-edge solutions in web, systems, blockchain, and Web3.
+              An uncensored public blog for Kenyans to share stories of intimidation and injustice. Your truth matters. Your voice is powerful.
             </p>
             <div className="mt-10 flex items-center gap-x-6">
               <Button asChild size="lg" className="shadow-lg hover:shadow-primary/50 transition-shadow bg-primary hover:bg-primary/90 text-primary-foreground">
-                <Link href="/services">
-                  Explore Services <ArrowRight className="ml-2 h-5 w-5" />
+                <Link href="/blog">
+                  Read The Blog <BookOpen className="ml-2 h-5 w-5" />
                 </Link>
               </Button>
               <Button asChild variant="outline" size="lg" className="border-accent text-accent hover:bg-accent/10">
                 <Link href="/contact">
-                  Get in Touch
+                  Share Your Story <ArrowRight className="ml-2 h-5 w-5" />
                 </Link>
               </Button>
             </div>
           </div>
           <div className={`relative transition-all duration-1000 ease-out delay-200 ${mounted ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-10'}`}>
             <Image
-              src="https://picsum.photos/id/1/600/400"
-              alt="Person working on a laptop for Simon Styles Hub"
+              src="https://placehold.co/600x400.png"
+              alt="Flag of Kenya"
               width={600}
               height={400}
               className="rounded-xl shadow-2xl object-cover mx-auto"
-              data-ai-hint="alejandro developer"
+              data-ai-hint="kenya flag"
               priority
             />
              <div className="absolute -top-8 -right-8 w-32 h-32 bg-accent/20 rounded-full filter blur-2xl animate-pulse opacity-50  md:block hidden"></div>

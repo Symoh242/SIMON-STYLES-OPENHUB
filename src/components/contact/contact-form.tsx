@@ -19,10 +19,10 @@ import { useToast } from '@/hooks/use-toast';
 import { Send, Loader2 } from 'lucide-react';
 
 const contactFormSchema = z.object({
-  name: z.string().min(2, { message: 'Name must be at least 2 characters.' }),
-  email: z.string().email({ message: 'Please enter a valid email address.' }),
-  subject: z.string().min(5, { message: 'Subject must be at least 5 characters.' }),
-  message: z.string().min(10, { message: 'Message must be at least 10 characters.' }),
+  name: z.string().min(2, { message: 'Name must be at least 2 characters.' }).optional(),
+  email: z.string().email({ message: 'Please enter a valid email address.' }).optional(),
+  subject: z.string().min(5, { message: 'Title must be at least 5 characters.' }),
+  message: z.string().min(20, { message: 'Your story must be at least 20 characters.' }),
 });
 
 type ContactFormValues = z.infer<typeof contactFormSchema>;
@@ -40,13 +40,13 @@ export function ContactForm() {
   });
 
   async function onSubmit(data: ContactFormValues) {
-    // Simulate form submission
-    console.log('Contact form submitted:', data);
-    // Simulate API delay
+    // In a real application, this would securely send the story to a server.
+    // For now, we just log it and show a success message.
+    console.log('Story submitted:', data);
     await new Promise(resolve => setTimeout(resolve, 1000));
     toast({
-      title: 'Message Sent!',
-      description: 'Thank you for contacting us. We will get back to you shortly.',
+      title: 'Story Submitted!',
+      description: 'Thank you for your courage and for sharing your story with us. It has been received.',
     });
     form.reset();
   }
@@ -59,9 +59,9 @@ export function ContactForm() {
           name="name"
           render={({ field }) => (
             <FormItem>
-              <FormLabel>Full Name</FormLabel>
+              <FormLabel>Your Name (Optional)</FormLabel>
               <FormControl>
-                <Input placeholder="John Doe" {...field} />
+                <Input placeholder="You can remain anonymous" {...field} />
               </FormControl>
               <FormMessage />
             </FormItem>
@@ -72,9 +72,9 @@ export function ContactForm() {
           name="email"
           render={({ field }) => (
             <FormItem>
-              <FormLabel>Email Address</FormLabel>
+              <FormLabel>Contact Email (Optional)</FormLabel>
               <FormControl>
-                <Input type="email" placeholder="you@example.com" {...field} />
+                <Input type="email" placeholder="Optional, if you wish to be contacted" {...field} />
               </FormControl>
               <FormMessage />
             </FormItem>
@@ -85,9 +85,9 @@ export function ContactForm() {
           name="subject"
           render={({ field }) => (
             <FormItem>
-              <FormLabel>Subject</FormLabel>
+              <FormLabel>Title of Your Story</FormLabel>
               <FormControl>
-                <Input placeholder="Regarding your services..." {...field} />
+                <Input placeholder="A title for your experience" {...field} />
               </FormControl>
               <FormMessage />
             </FormItem>
@@ -98,11 +98,11 @@ export function ContactForm() {
           name="message"
           render={({ field }) => (
             <FormItem>
-              <FormLabel>Message</FormLabel>
+              <FormLabel>Your Story</FormLabel>
               <FormControl>
                 <Textarea
-                  placeholder="Tell us more about your project or query..."
-                  className="min-h-[120px]"
+                  placeholder="Share your story here. Please be as detailed as you feel comfortable."
+                  className="min-h-[200px]"
                   {...field}
                 />
               </FormControl>
@@ -114,11 +114,11 @@ export function ContactForm() {
           {form.formState.isSubmitting ? (
             <>
               <Loader2 className="mr-2 h-4 w-4 animate-spin" />
-              Sending...
+              Submitting...
             </>
           ) : (
             <>
-              Send Message <Send className="ml-2 h-4 w-4" />
+              Submit Securely <Send className="ml-2 h-4 w-4" />
             </>
           )}
         </Button>

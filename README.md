@@ -1,6 +1,6 @@
 
-# Simon Styles Hub
+# A Voice for Kenya
 
-This is a NextJS starter in Firebase Studio, named Simon Styles Hub.
+This is a NextJS application, built in Firebase Studio, that serves as a public blog for sharing stories and information about the challenges faced by the people of Kenya.
 
-To get started, take a look at src/app/page.tsx.
+It's a platform for the voices that need to be heard.

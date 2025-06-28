@@ -12,10 +12,9 @@ import { useState, useEffect } from 'react';
 
 const navLinks = [
   { href: '/', label: 'Home' },
-  { href: '/services', label: 'Services' },
-  { href: '/laptops', label: 'Laptops' },
-  { href: '/about', label: 'About Us' },
-  { href: '/contact', label: 'Contact' },
+  { href: '/blog', label: 'Blog' },
+  { href: '/about', label: 'About' },
+  { href: '/contact', label: 'Share Your Story' },
 ];
 
 export function Navbar() {
@@ -27,21 +26,35 @@ export function Navbar() {
     setIsMounted(true);
   }, []);
 
+  const NavContent = () => (
+    <>
+      {navLinks.map((link) => (
+        <Link
+          key={link.href}
+          href={link.href}
+          onClick={() => isSheetOpen && setIsSheetOpen(false)}
+          className={cn(
+            'px-3 py-2 rounded-md text-sm font-medium transition-colors',
+            pathname === link.href
+              ? 'bg-primary text-primary-foreground'
+              : 'text-foreground hover:bg-accent hover:text-accent-foreground',
+            isSheetOpen && 'block w-full text-left mb-2 text-lg py-3'
+          )}
+        >
+          {link.label}
+        </Link>
+      ))}
+    </>
+  );
+
   if (!isMounted) {
-    // Avoid rendering on server to prevent hydration mismatch for Sheet on mobile
     return (
       <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
         <div className="container mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
           <Link href="/" className="flex items-center space-x-2">
             <LogoIcon className="h-8 w-8" />
-            <span className="font-bold text-xl text-primary">Simon Styles Hub</span>
+            <span className="font-bold text-xl text-primary">A Voice for Kenya</span>
           </Link>
-          {/* Placeholder for nav links to maintain layout consistency before hydration */}
-          <div className="hidden md:flex items-center space-x-1">
-            {navLinks.map((link) => (
-              <div key={link.href} className="px-3 py-2 rounded-md text-sm font-medium text-transparent bg-muted/50 animate-pulse w-20 h-8"></div>
-            ))}
-          </div>
           <div className="md:hidden">
              <Button variant="ghost" size="icon" disabled>
                 <Menu className="h-6 w-6" />
@@ -52,37 +65,17 @@ export function Navbar() {
     );
   }
 
-  const NavLinksContent = ({ isMobile = false }: { isMobile?: boolean }) => (
-    <>
-      {navLinks.map((link) => (
-        <Link
-          key={link.href}
-          href={link.href}
-          onClick={() => isMobile && setIsSheetOpen(false)}
-          className={cn(
-            'px-3 py-2 rounded-md text-sm font-medium transition-colors',
-            pathname === link.href
-              ? 'bg-primary text-primary-foreground'
-              : 'text-foreground hover:bg-accent hover:text-accent-foreground',
-            isMobile && 'block w-full text-left mb-2 text-lg py-3'
-          )}
-        >
-          {link.label}
-        </Link>
-      ))}
-    </>
-  );
-  
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
         <Link href="/" className="flex items-center space-x-2" onClick={() => setIsSheetOpen(false)}>
           <LogoIcon className="h-8 w-8" />
-           <span className="font-bold text-xl text-primary">Simon Styles Hub</span>
+           <span className="font-bold text-xl text-primary sm:hidden md:inline-block">A Voice for Kenya</span>
+           <span className="font-bold text-xl text-primary sm:inline-block md:hidden">AVFK</span>
         </Link>
         
         <nav className="hidden md:flex items-center space-x-1">
-          <NavLinksContent />
+          <NavContent />
         </nav>
 
         <div className="md:hidden">
@@ -94,13 +87,7 @@ export function Navbar() {
               </Button>
             </SheetTrigger>
             <SheetContent side="right" className="w-full max-w-xs bg-background p-6 pt-10">
-              <div className="flex flex-col space-y-4">
-                <Link href="/" className="mb-6 self-start flex items-center space-x-2" onClick={() => setIsSheetOpen(false)}>
-                  <LogoIcon className="h-10 w-10" />
-                  <span className="font-bold text-2xl text-primary">Simon Styles Hub</span>
-                </Link>
-                <NavLinksContent isMobile={true} />
-              </div>
+              <NavContent />
             </SheetContent>
           </Sheet>
         </div>
