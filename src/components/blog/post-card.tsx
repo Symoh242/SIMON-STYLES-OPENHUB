@@ -1,4 +1,3 @@
-
 import Link from 'next/link';
 import Image from 'next/image';
 import type { BlogPost } from '@/lib/data';
@@ -11,10 +10,18 @@ interface PostCardProps {
 }
 
 export function PostCard({ post }: PostCardProps) {
+  const primaryLink = post.liveUrl || `/blog/${post.slug}`;
+  const isExternal = !!post.liveUrl;
+
   return (
     <Card className="flex flex-col h-full overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 bg-card group">
       <CardHeader className="p-0">
-        <Link href={`/blog/${post.slug}`} className="block relative aspect-video w-full overflow-hidden">
+        <Link 
+          href={primaryLink}
+          target={isExternal ? '_blank' : '_self'}
+          rel={isExternal ? 'noopener noreferrer' : ''}
+          className="block relative aspect-video w-full overflow-hidden"
+        >
           <Image
             src={post.imageUrl}
             alt={post.title}
@@ -27,7 +34,14 @@ export function PostCard({ post }: PostCardProps) {
       </CardHeader>
       <CardContent className="p-6 flex-grow">
         <CardTitle className="text-xl font-semibold mb-2">
-          <Link href={`/blog/${post.slug}`} className="hover:text-primary transition-colors">{post.title}</Link>
+          <Link 
+            href={primaryLink}
+            target={isExternal ? '_blank' : '_self'}
+            rel={isExternal ? 'noopener noreferrer' : ''} 
+            className="hover:text-primary transition-colors"
+          >
+            {post.title}
+          </Link>
         </CardTitle>
         <CardDescription className="text-sm text-muted-foreground line-clamp-3">
           {post.excerpt}
