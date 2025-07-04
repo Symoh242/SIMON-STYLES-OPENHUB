@@ -14,56 +14,6 @@ export interface BlogPost {
 
 export const blogPostsData: BlogPost[] = [
   {
-    id: '1',
-    slug: 'e-commerce-platform',
-    title: 'E-commerce Platform',
-    excerpt: 'A full-featured e-commerce website built with Next.js, Stripe for payments, and a custom CMS for product management. Designed for performance and scalability.',
-    content: `This project was a comprehensive build of a modern e-commerce platform. The front-end was developed using Next.js for server-side rendering and static site generation, ensuring fast page loads and excellent SEO performance.
-    
-We integrated Stripe for secure and seamless payment processing, handling everything from credit card payments to subscription models.
-    
-The back-end includes a custom-built Content Management System (CMS) that allows administrators to easily manage products, categories, orders, and customer data. This was built using Node.js and a PostgreSQL database. The entire application is deployed on Vercel for continuous integration and delivery.`,
-    author: 'Simon Maina Wanjiru',
-    date: 'June 15, 2024',
-    imageUrl: 'https://picsum.photos/id/1/600/400',
-    dataAiHint: 'website screenshot',
-  },
-  {
-    id: '2',
-    slug: 'task-management-app',
-    title: 'Task Management App',
-    excerpt: 'A collaborative task management application with a focus on real-time updates and an intuitive user experience, featuring drag-and-drop functionality.',
-    content: `The goal of this project was to create a highly interactive and user-friendly task management tool, similar to Trello or Asana. The application is built as a Single Page Application (SPA) using React.
-    
-Key features include creating boards, lists, and cards, assigning tasks to users, and setting due dates. One of the main technical challenges was implementing a smooth and responsive drag-and-drop interface, which was achieved using the react-beautiful-dnd library.
-    
-For real-time collaboration, we used Firebase Realtime Database to ensure that any changes made by one user are instantly reflected for all other team members, without needing to refresh the page.`,
-    author: 'Simon Maina Wanjiru',
-    date: 'May 01, 2024',
-    imageUrl: 'https://picsum.photos/id/1/600/400',
-    dataAiHint: 'dashboard interface',
-  },
-  {
-    id: '3',
-    slug: 'personal-portfolio-website',
-    title: 'Personal Portfolio Website',
-    excerpt: 'The very website you are on now. Built with Next.js, TypeScript, and Tailwind CSS to showcase my skills and projects in a clean and modern design.',
-    content: `This portfolio is a project in itself, designed to be a living showcase of my capabilities. It's built from the ground up using the latest web technologies.
-    
-The stack includes:
-- **Next.js:** For its hybrid static and server rendering, performance optimizations, and great developer experience.
-- **React & TypeScript:** For building maintainable and type-safe UI components.
-- **Tailwind CSS:** For a utility-first approach to styling that allows for rapid and custom design without leaving the HTML.
-- **ShadCN UI:** For a set of accessible and reusable base components.
-- **Vercel:** For seamless deployment and hosting.
-
-The goal was to create a fast, accessible, and aesthetically pleasing site that effectively tells my professional story.`,
-    author: 'Simon Maina Wanjiru',
-    date: 'July 28, 2024',
-    imageUrl: 'https://picsum.photos/id/1/600/400',
-    dataAiHint: 'abstract code',
-  },
-  {
     id: '4',
     slug: 'beedeee-website',
     title: 'BeeDeee E-commerce Site',
