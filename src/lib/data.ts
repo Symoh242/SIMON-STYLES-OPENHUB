@@ -8,6 +8,7 @@ export interface BlogPost {
   date: string;
   imageUrl: string;
   dataAiHint: string;
+  liveUrl?: string;
 }
 
 export const blogPostsData: BlogPost[] = [
@@ -71,6 +72,7 @@ The goal was to create a fast, accessible, and aesthetically pleasing site that 
     date: 'March 10, 2024',
     imageUrl: 'https://picsum.photos/id/1/600/400',
     dataAiHint: 'ecommerce platform',
+    liveUrl: 'https://beedeee.co.ke/',
   },
   {
     id: '5',
@@ -82,6 +84,7 @@ The goal was to create a fast, accessible, and aesthetically pleasing site that 
     date: 'April 20, 2024',
     imageUrl: 'https://picsum.photos/id/1/600/400',
     dataAiHint: 'flowers ecommerce',
+    liveUrl: 'https://leegiftsandflowers.co.ke/',
   },
   {
     id: '6',
@@ -93,6 +96,7 @@ The goal was to create a fast, accessible, and aesthetically pleasing site that 
     date: 'February 15, 2024',
     imageUrl: 'https://picsum.photos/id/1/600/400',
     dataAiHint: 'corporate website',
+    liveUrl: 'https://primeinktechnologies.co.ke/',
   },
   {
     id: '7',
@@ -104,6 +108,7 @@ The goal was to create a fast, accessible, and aesthetically pleasing site that 
     date: 'January 20, 2024',
     imageUrl: 'https://picsum.photos/id/1/600/400',
     dataAiHint: 'web design grid',
+    liveUrl: 'https://simon-websites.vercel.app/',
   },
   {
     id: '8',
@@ -115,6 +120,7 @@ The goal was to create a fast, accessible, and aesthetically pleasing site that 
     date: 'December 05, 2023',
     imageUrl: 'https://picsum.photos/id/1/600/400',
     dataAiHint: 'business meeting',
+    liveUrl: 'https://ilorie-consult.vercel.app/',
   }
 ];
 

@@ -4,7 +4,7 @@ import Image from 'next/image';
 import type { BlogPost } from '@/lib/data';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, ExternalLink } from 'lucide-react';
 
 interface PostCardProps {
   post: BlogPost;
@@ -38,11 +38,20 @@ export function PostCard({ post }: PostCardProps) {
           <p className="font-semibold text-foreground">{post.author}</p>
           <p>{post.date}</p>
         </div>
-        <Button asChild variant="link" className="text-primary">
-          <Link href={`/blog/${post.slug}`}>
-            Read More <ArrowRight className="ml-2 h-4 w-4" />
-          </Link>
-        </Button>
+        <div className="flex items-center shrink-0 space-x-2">
+            {post.liveUrl && (
+                <Button asChild variant="outline" size="sm">
+                    <Link href={post.liveUrl} target="_blank" rel="noopener noreferrer">
+                        Live Site <ExternalLink className="ml-2 h-4 w-4" />
+                    </Link>
+                </Button>
+            )}
+            <Button asChild variant="link" className="text-primary">
+                <Link href={`/blog/${post.slug}`}>
+                    Read More <ArrowRight className="ml-2 h-4 w-4" />
+                </Link>
+            </Button>
+        </div>
       </CardFooter>
     </Card>
   );
