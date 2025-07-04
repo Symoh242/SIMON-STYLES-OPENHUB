@@ -12,9 +12,9 @@ import { useState, useEffect } from 'react';
 
 const navLinks = [
   { href: '/', label: 'Home' },
-  { href: '/blog', label: 'Blog' },
   { href: '/about', label: 'About' },
-  { href: '/contact', label: 'Share Your Story' },
+  { href: '/blog', label: 'Projects' },
+  { href: '/contact', label: 'Contact' },
 ];
 
 export function Navbar() {
@@ -53,7 +53,7 @@ export function Navbar() {
         <div className="container mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
           <Link href="/" className="flex items-center space-x-2">
             <LogoIcon className="h-8 w-8" />
-            <span className="font-bold text-xl text-primary">A Voice for Kenya</span>
+            <span className="font-bold text-xl text-primary">Simon Styles Hub</span>
           </Link>
           <div className="md:hidden">
              <Button variant="ghost" size="icon" disabled>
@@ -70,8 +70,7 @@ export function Navbar() {
       <div className="container mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
         <Link href="/" className="flex items-center space-x-2" onClick={() => setIsSheetOpen(false)}>
           <LogoIcon className="h-8 w-8" />
-           <span className="font-bold text-xl text-primary sm:hidden md:inline-block">A Voice for Kenya</span>
-           <span className="font-bold text-xl text-primary sm:inline-block md:hidden">AVFK</span>
+           <span className="font-bold text-xl text-primary">Simon Styles Hub</span>
         </Link>
         
         <nav className="hidden md:flex items-center space-x-1">

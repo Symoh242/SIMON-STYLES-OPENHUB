@@ -7,8 +7,8 @@ export default function BlogPage() {
   return (
     <>
       <PageHeader
-        title="The People's Blog"
-        description="Stories, news, and unfiltered truths from across Kenya. A platform for the voices that need to be heard."
+        title="My Projects"
+        description="A collection of my work, from client projects to personal experiments. Each project represents a challenge I was excited to solve."
       />
       <section className="py-16 md:py-24 bg-background">
         <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -20,7 +20,7 @@ export default function BlogPage() {
             </div>
           ) : (
             <div className="text-center py-12">
-              <p className="text-xl text-muted-foreground">No posts yet. Please check back soon.</p>
+              <p className="text-xl text-muted-foreground">No projects yet. Please check back soon.</p>
             </div>
           )}
         </div>

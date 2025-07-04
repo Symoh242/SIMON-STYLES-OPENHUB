@@ -7,8 +7,8 @@ import { Footer } from '@/components/layout/footer';
 import { Toaster } from "@/components/ui/toaster";
 
 export const metadata: Metadata = {
-  title: 'A Voice for Kenya | A Public Blog',
-  description: 'A platform for sharing stories, news, and unfiltered truths from across Kenya. A space for the voices that need to be heard against intimidation.',
+  title: 'Simon Styles Hub | Professional Portfolio',
+  description: 'The professional portfolio of Simon Maina Wanjiru, showcasing web development projects, skills, and professional experience.',
 };
 
 export default function RootLayout({

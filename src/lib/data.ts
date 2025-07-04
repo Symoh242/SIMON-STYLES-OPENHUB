@@ -14,35 +14,88 @@ export interface BlogPost {
 export const blogPostsData: BlogPost[] = [
   {
     id: '1',
-    slug: 'the-cost-of-silence',
-    title: 'The Cost of Silence: A Nation in Waiting',
-    excerpt: 'In the heart of our vibrant nation, a quiet unease simmers. The promises of a brighter future feel distant as everyday citizens grapple with economic hardship and a palpable sense of injustice...',
-    content: `In the heart of our vibrant nation, a quiet unease simmers. The promises of a brighter future feel distant as everyday citizens grapple with economic hardship and a palpable sense of injustice. This is not just a story of politics; it's a story of people. It's the story of the market vendor whose prices are dictated by forces beyond her control, the student who dreams of a job that may not exist, and the parent who fears for their child's safety.\n\nWe are told to be patient, to trust the process. But patience wears thin when the cost of living climbs daily, while accountability remains a foreign concept to those in power. Intimidation, both subtle and overt, has become a tool to quell dissent. Questions are met with threats, and criticism is branded as treason.\n\nThis blog is a space for those stories to be told. It is a testament to the resilience of the Kenyan spirit and a call to reclaim the narrative. We must speak up, not out of malice, but out of a profound love for our country and a desire to see it heal and prosper for all, not just a select few.`,
-    author: 'A Concerned Citizen',
-    date: 'July 26, 2024',
-    imageUrl: 'https://placehold.co/600x400.png',
-    dataAiHint: 'kenya flag',
+    slug: 'e-commerce-platform',
+    title: 'E-commerce Platform',
+    excerpt: 'A full-featured e-commerce website built with Next.js, Stripe for payments, and a custom CMS for product management. Designed for performance and scalability.',
+    content: `This project was a comprehensive build of a modern e-commerce platform. The front-end was developed using Next.js for server-side rendering and static site generation, ensuring fast page loads and excellent SEO performance.
+    
+We integrated Stripe for secure and seamless payment processing, handling everything from credit card payments to subscription models.
+    
+The back-end includes a custom-built Content Management System (CMS) that allows administrators to easily manage products, categories, orders, and customer data. This was built using Node.js and a PostgreSQL database. The entire application is deployed on Vercel for continuous integration and delivery.`,
+    author: 'Simon Maina Wanjiru',
+    date: 'June 15, 2024',
+    imageUrl: 'https://picsum.photos/id/1/600/400',
+    dataAiHint: 'website screenshot',
   },
   {
     id: '2',
-    slug: 'a-generation-betrayed',
-    title: 'A Generation Betrayed: The Youth Cry Out',
-    excerpt: 'They called us the "digital generation," the future leaders. Yet, we find ourselves at a crossroads, armed with education but stripped of opportunity. The system has failed us, and our voices are rising...',
-    content: `They called us the "digital generation," the future leaders. Yet, we find ourselves at a crossroads, armed with education but stripped of opportunity. The system has failed us, and our voices are rising from the streets of Nairobi to the smallest villages.\n\nThe recent protests are not a sign of chaos, but a symptom of a deep-seated betrayal. We marched for our future, for a fair chance, for an end to the corruption that suffocates our potential. In return, we were met with force, with tear gas, and with bullets. Our pleas for dialogue were answered with violence.\n\nThis is the reality for the youth in Kenya today. We are not hooligans; we are patriots. We are not idle; we are fighting for the very soul of our nation. Let this be a record of our struggle, a reminder that the spirit of a generation cannot be silenced.`,
-    author: 'Youth for Kenya',
-    date: 'July 24, 2024',
-    imageUrl: 'https://placehold.co/600x400.png',
-    dataAiHint: 'protest crowd',
+    slug: 'task-management-app',
+    title: 'Task Management App',
+    excerpt: 'A collaborative task management application with a focus on real-time updates and an intuitive user experience, featuring drag-and-drop functionality.',
+    content: `The goal of this project was to create a highly interactive and user-friendly task management tool, similar to Trello or Asana. The application is built as a Single Page Application (SPA) using React.
+    
+Key features include creating boards, lists, and cards, assigning tasks to users, and setting due dates. One of the main technical challenges was implementing a smooth and responsive drag-and-drop interface, which was achieved using the react-beautiful-dnd library.
+    
+For real-time collaboration, we used Firebase Realtime Database to ensure that any changes made by one user are instantly reflected for all other team members, without needing to refresh the page.`,
+    author: 'Simon Maina Wanjiru',
+    date: 'May 01, 2024',
+    imageUrl: 'https://picsum.photos/id/1/600/400',
+    dataAiHint: 'dashboard interface',
   },
   {
     id: '3',
-    slug: 'what-is-the-finance-bill',
-    title: 'Explainer: What is the Finance Bill and Why Does It Matter?',
-    excerpt: 'The term "Finance Bill" is on everyone\'s lips, but what does it actually mean for the average Kenyan? Here\'s a simple breakdown of its impact on your wallet and your rights.',
-    content: `The term "Finance Bill" is on everyone's lips, but what does it actually mean for the average Kenyan? It can seem complex, but its effects are simple and direct.\n\nIn essence, the Finance Bill is the government's plan to raise money. It outlines new taxes and changes to existing ones. The recent bill proposed taxes on basic necessities – from bread to mobile money transfers – placing a heavy burden on citizens who are already struggling.\n\nWhy the outrage? Because it felt like a punishment, not a plan. It increased the cost of living without a clear vision for how the money would be used to benefit the people. It represented a disconnect between the government and the governed. Understanding the Finance Bill is the first step to demanding fiscal responsibility and a government that serves its people.`,
-    author: 'Economic Justice Network',
-    date: 'July 22, 2024',
-    imageUrl: 'https://placehold.co/600x400.png',
-    dataAiHint: 'money kenya',
+    slug: 'personal-portfolio-website',
+    title: 'Personal Portfolio Website',
+    excerpt: 'The very website you are on now. Built with Next.js, TypeScript, and Tailwind CSS to showcase my skills and projects in a clean and modern design.',
+    content: `This portfolio is a project in itself, designed to be a living showcase of my capabilities. It's built from the ground up using the latest web technologies.
+    
+The stack includes:
+- **Next.js:** For its hybrid static and server rendering, performance optimizations, and great developer experience.
+- **React & TypeScript:** For building maintainable and type-safe UI components.
+- **Tailwind CSS:** For a utility-first approach to styling that allows for rapid and custom design without leaving the HTML.
+- **ShadCN UI:** For a set of accessible and reusable base components.
+- **Vercel:** For seamless deployment and hosting.
+
+The goal was to create a fast, accessible, and aesthetically pleasing site that effectively tells my professional story.`,
+    author: 'Simon Maina Wanjiru',
+    date: 'July 28, 2024',
+    imageUrl: 'https://picsum.photos/id/1/600/400',
+    dataAiHint: 'abstract code',
   },
+];
+
+export interface Testimonial {
+  id: string;
+  name: string;
+  title: string;
+  quote: string;
+  imageUrl: string;
+  dataAiHint: string;
+}
+
+export const testimonialsData: Testimonial[] = [
+    {
+        id: '1',
+        name: 'Jane Doe',
+        title: 'Project Manager, Tech Solutions Inc.',
+        quote: 'Simon is an exceptional developer with a keen eye for detail. He was instrumental in the success of our e-commerce platform, delivering high-quality code on time. His problem-solving skills are top-notch.',
+        imageUrl: 'https://picsum.photos/id/1/100/100',
+        dataAiHint: 'professional woman',
+    },
+    {
+        id: '2',
+        name: 'John Smith',
+        title: 'Lead Designer, Creative Agency',
+        quote: 'Working with Simon is a pleasure. He is not only technically proficient but also has a great sense of design and user experience. He brings ideas to life beautifully and efficiently.',
+        imageUrl: 'https://picsum.photos/id/1/100/100',
+        dataAiHint: 'man portrait',
+    },
+    {
+        id: '3',
+        name: 'Emily White',
+        title: 'CEO, Startup Hub',
+        quote: 'We hired Simon to build our MVP, and he exceeded all our expectations. His ability to quickly understand our vision and translate it into a functional product was remarkable. Highly recommended!',
+        imageUrl: 'https://picsum.photos/id/1/100/100',
+        dataAiHint: 'business woman',
+    },
 ];
